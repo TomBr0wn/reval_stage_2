@@ -12,7 +12,7 @@
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Filter property group</h1>
+                    <h1 class="govuk-heading-xl">Filter the property group</h1>
                 </div>
             </div>
             <form action="/properties_landing">
@@ -26,16 +26,12 @@
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="initial-0" name="initial" type="checkbox" value="Street" data-aria-controls="conditional-initial" {{ checked( "initial", "Street" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="initial-0">
-                          Street
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-0">Street</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="initial-street">
-                            Street
-                          </label>
+                                    <label class="govuk-label" for="initial-street">Street</label>
                                     <input class="govuk-input govuk-!-width-full" id="initial-street" name="initial-street" type="text" spellcheck="false">
                                 </div>
                             </div>
@@ -44,17 +40,13 @@
 
                             <!----------- POSTCODE ------------>
                             <div class="govuk-checkboxes__item">
-                                <input class="govuk-checkboxes__input" id="initial-1" name="initial" type="checkbox" value="Post Code" data-aria-controls="conditional-initial-2" {{checked( "initial", "Post Code" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="initial-1">
-                          Postcode
-                        </label>
+                                <input class="govuk-checkboxes__input" id="initial-1" name="initial" type="checkbox" value="Post Code" data-aria-controls="conditional-initial-1" {{checked( "initial", "Post Code" )}}>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-1">Postcode</label>
                             </div>
 
-                            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-2">
+                            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-1">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="initial-postcode">
-                            Postcode
-                          </label>
+                                    <label class="govuk-label" for="initial-postcode">Postcode</label>
                                     <input class="govuk-input govuk-!-width-full" id="initial-postcode" name="initial-postcode" type="text" spellcheck="false">
                                 </div>
                             </div>
@@ -63,17 +55,78 @@
 
                             <!----------- SCAT CODE ------------>
                             <div class="govuk-checkboxes__item">
-                                <input class="govuk-checkboxes__input" id="initial-2" name="initial" type="checkbox" value="Scat Code" data-aria-controls="conditional-initial-3" {{ checked( "initial", "Scat Code" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="initial-2">
-                          Scat Code
-                        </label>
+                                <input class="govuk-checkboxes__input" id="initial-2" name="initial" type="checkbox" value="Scat Code" data-aria-controls="conditional-initial-2" {{ checked( "initial", "Scat Code" )}}>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-2">Scat Code</label>
+                            </div>
+
+                            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-2">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="inital-scat-code">Scat Code</label>
+                                    <input class="govuk-input govuk-!-width-full" id="inital-scat-code" name="inital-scat-code" type="text" spellcheck="false">
+                                </div>
+                            </div>
+
+                            <!----------- SUB LOCATION ------------>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="initial-3" name="initial" type="checkbox" value="Sub Location" data-aria-controls="conditional-initial-3" {{ checked( "initial", "Sub Location" )}}>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-3">Sub Location</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-3">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="inital-scat-code">
-                            Scat Code
-                          </label>
+                                    <label class="govuk-label" for="inital-scat-code">Sub Location</label>
+                                    <input class="govuk-input govuk-!-width-full" id="inital-scat-code" name="inital-scat-code" type="text" spellcheck="false">
+                                </div>
+                            </div>
+
+                            <!----------- SUB LOCATION CURRENT ------------>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="initial-4" name="initial" type="checkbox" value="Sub location current" data-aria-controls="conditional-initial-4" {{ checked( "initial", "Sub location current" )}}>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-4">Sub location current</label>
+                            </div>
+
+                            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-4">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="inital-scat-code">Sub location current</label>
+                                    <input class="govuk-input govuk-!-width-full" id="inital-scat-code" name="inital-scat-code" type="text" spellcheck="false">
+                                </div>
+                            </div>
+
+                            <!----------- SUB LOCATION REVAL ------------>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="initial-5" name="initial" type="checkbox" value="Sub location reval" data-aria-controls="conditional-initial-5" {{ checked( "initial", "Sub location reval" )}}>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-5">Sub location reval</label>
+                            </div>
+
+                            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-5">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="inital-scat-code">Sub location reval</label>
+                                    <input class="govuk-input govuk-!-width-full" id="inital-scat-code" name="inital-scat-code" type="text" spellcheck="false">
+                                </div>
+                            </div>
+
+                            <!----------- PATTERN MATRIX CURRENT ------------>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="initial-6" name="initial" type="checkbox" value="Pattern matrix current" data-aria-controls="conditional-initial-6" {{ checked( "initial", "Pattern matrix current" )}}>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-6">Pattern matrix current</label>
+                            </div>
+
+                            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-6">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="inital-scat-code">Pattern matrix current</label>
+                                    <input class="govuk-input govuk-!-width-full" id="inital-scat-code" name="inital-scat-code" type="text" spellcheck="false">
+                                </div>
+                            </div>
+
+                            <!----------- BILLING AUTHORITY ------------>
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="initial-7" name="initial" type="checkbox" value="Billing Authority" data-aria-controls="conditional-initial-7" {{ checked( "initial", "Billing Authority" )}}>
+                                <label class="govuk-label govuk-checkboxes__label" for="initial-7">Billing Authority</label>
+                            </div>
+
+                            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial-7">
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="inital-scat-code">Billing Authority</label>
                                     <input class="govuk-input govuk-!-width-full" id="inital-scat-code" name="inital-scat-code" type="text" spellcheck="false">
                                 </div>
                             </div>
