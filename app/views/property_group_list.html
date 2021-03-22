@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    {% extends "layout.html" %} {% block pageTitle %} Blank page {% endblock %} {% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-xl">Property Groups in Leeds</h1>
+            <form action="filters_prop_comments">
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col">Desription</th>
+                            <th class="govuk-table__header" scope="col">Last updated</th>
+                            <th class="govuk-table__header" scope="col">Status</th>
+                            <th class="govuk-table__header" scope="col">&nbsp;</th>
+                            <th class="govuk-table__header" scope="col">&nbsp;</th>
+                            <th class="govuk-table__header" scope="col">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body" id="insertNewRow">
+                        <tr class="govuk-table__row">
+                            <!-- <td class="govuk-table__cell">{{ data['passRowDescription'] }}</td> -->
+                            <!-- <td class="govuk-table__cell">{{ data['groupDescription'] }}</td> -->
+                            <td class="govuk-table__cell">Industrials in Leeds</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Retrieving data</strong></td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="property_groups_dir_3">Refresh</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/property_group_summary">Edit</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/delete_property_group">Delete</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/properties_landing">Open</a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <!-- <td class="govuk-table__cell">{{ data['passRowDescription'] }}</td> -->
+                            <!-- <td class="govuk-table__cell">{{ data['groupDescription'] }}</td> -->
+                            <td class="govuk-table__cell">Offices in Leeds city centre</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">Refresh required</strong></td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="property_groups_dir_3">Refresh</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/property_group_summary">Edit</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/delete_property_group">Delete</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/properties_landing">Open</a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <!-- <td class="govuk-table__cell">{{ data['passRowDescription'] }}</td> -->
+                            <!-- <td class="govuk-table__cell">{{ data['groupDescription'] }}</td> -->
+                            <td class="govuk-table__cell">Offices in North Leeds</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Ready</strong></td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="property_groups_dir_3">Refresh</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/property_group_summary">Edit</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/delete_property_group">Delete</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/properties_landing">Open</a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <!-- <td class="govuk-table__cell">{{ data['passRowDescription'] }}</td> -->
+                            <!-- <td class="govuk-table__cell">{{ data['groupDescription'] }}</td> -->
+                            <td class="govuk-table__cell">Offices in South Leeds</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Retrieving data</strong></td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="property_groups_dir_3">Refresh</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/property_group_summary">Edit</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/delete_property_group">Delete</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link" href="/properties_landing">Open</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><button class="govuk-button" data-module="govuk-button">Create property group</button>
+            </form>
+        </div>
+    </div>{% endblock %}
+</body>
+
+</html>

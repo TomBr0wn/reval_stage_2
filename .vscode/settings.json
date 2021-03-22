@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "html-fmt-vscode.indentSize": 2,
+  "html-fmt-vscode.multilineAttributeThreshold": 10
+}

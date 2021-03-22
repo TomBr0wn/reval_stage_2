@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    {% extends "layout.html" %} {% block pageTitle %} Blank page {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="#">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Industrials in Leeds: All</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="grid-parent">
+                    <div>
+                        <p>View Type</p>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link" href="/properties_landing">Properties</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link govuk-!-font-weight-bold" href="/rentals_landing">Rentals</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <table class="govuk-table">
+                            <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                    <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Matrix name</th>
+                                    <th class="govuk-table__header govuk-!-width-one-half" scope="col">Description</th>
+                                    <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Select this matrix</th>
+                                </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Matrix_AAA_1111</td>
+                                    <td class="govuk-table__cell">Rooted above a tundra</td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/single_matrix">View this matrix</a>
+                                    </td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Matrix_XXX_2222</td>
+                                    <td class="govuk-table__cell">Formed next to a geyser field</td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/single_matrix">View this matrix</a>
+                                    </td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Matrix_QQQ_9999</td>
+                                    <td class="govuk-table__cell">Headed towards a harsh future</td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/single_matrix">View this matrix</a>
+                                    </td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Matrix_GGG_1234</td>
+                                    <td class="govuk-table__cell">Ventarco is home to goblins</td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/single_matrix">View this matrix</a>
+                                    </td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Matrix_ZZZ_0000</td>
+                                    <td class="govuk-table__cell">Dark wooden rooftops, lavastone walls</td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/single_matrix">View this matrix</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- </div> end of grid parent -->
+            </div>
+        </main>
+    </div>{% endblock %}
+</body>
+
+</html>
