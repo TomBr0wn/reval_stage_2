@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Blank page {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/matrix_hereditaments">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Industrials in Leeds: Add comment to hereditament</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <!-------------------------- FORM ------------------------->
+                <form action="/price_matrix_hereditaments_success">
+
+                    <div class="govuk-form-group">
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="commenterName">Your name</label>
+                            <input class="govuk-input govuk-!-width-one-half" id="commenterName" name="commenterName" type="text">
+                        </div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="commenterName">Price</label>
+                            <input class="govuk-input govuk-!-width-one-half" id="commenterName" name="commenterName" type="text">
+                        </div>
+                    </div>
+
+                    <div class="govuk-button-group">
+                        <button class="govuk-button" data-module="govuk-button">Save comment</button>
+                        <a class="govuk-link" href="/matrices_landing">Return to Matrices</a>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+    </div> {% endblock %} </body>
+
+</html>
