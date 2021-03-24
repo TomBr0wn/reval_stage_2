@@ -5,18 +5,18 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} QA Add comment {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} QA: Add comment {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/qa_start">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Industrials in Leeds: Add QA Comment</h1>
+                    <h1 class="govuk-heading-xl">QA: Add comment</h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
                 <!-------------------------- FORM ------------------------->
-                <form action="qa_comment_success">
+                <form action="/qa_comment_success">
 
                     <div class="govuk-form-group">
 
@@ -25,8 +25,8 @@
                             <input class="govuk-input govuk-!-width-one-half" id="commenterName" name="commenterName" type="text">
                         </div>
 
-                        <div id="more-detail-hint" class="govuk-hint">
-                            Add comment here to append to the survey units in the table.
+                        <div id="more-detail-hint" class="govuk-label">
+                            Add comment here
                         </div>
                         <textarea class="govuk-textarea govuk-!-width-one-half" id="add-a-comment" name="add-a-comment" rows="8" aria-describedby="add-a-comment-hint"></textarea>
                     </div>
@@ -38,14 +38,68 @@
 
                 </form>
 
+                <!--------------------- START OF TABLE ----------------------------->
 
+
+                <table class="govuk-table  govuk-!-margin-right-9 govuk-!-font-size-16">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Matrix ref</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Description</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number of properties</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number valued</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number failed</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Existing comment</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comment last updated by:</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comment last updated on:</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_AAA_1111</td>
+                            <td class="govuk-table__cell">Rooted above a tundra</td>
+                            <td class="govuk-table__cell">17</td>
+                            <td class="govuk-table__cell">10</td>
+                            <td class="govuk-table__cell">4</td>
+                            <td class="govuk-table__cell">I'm always relieved when someone is delivering a eulogy and I realise I'm listening to it.<br><br>
+                                <span class="govuk-!-font-weight-bold">{{ data['add-a-comment'] }}</span>
+                            </td>
+                            <td class="govuk-table__cell">Craig E Warner<span class="govuk-!-font-weight-bold"> {{ data['commenterName'] }}</span></td>
+                            <td class="govuk-table__cell">10/04/2017</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_XXX_2222</td>
+                            <td class="govuk-table__cell">Formed next to a geyser field</td>
+                            <td class="govuk-table__cell">17</td>
+                            <td class="govuk-table__cell">10</td>
+                            <td class="govuk-table__cell">4</td>
+                            <td class="govuk-table__cell">I love music theme of Howling Fjord, it is so peaceful, filled with ambient elements and sounds of nature, very relaxing.<br><br>
+                                <span class="govuk-!-font-weight-bold">{{ data['add-a-comment'] }}</span>
+                            </td>
+                            <td class="govuk-table__cell">Rufus Obrien<span class="govuk-!-font-weight-bold"> {{ data['commenterName'] }}</span></td>
+                            <td class="govuk-table__cell">16/04/2020</td>
+
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_QQQ_9999</td>
+                            <td class="govuk-table__cell">Headed towards a harsh future</td>
+                            <td class="govuk-table__cell">17</td>
+                            <td class="govuk-table__cell">10</td>
+                            <td class="govuk-table__cell">4</td>
+                            <td class="govuk-table__cell">Outstanding work, well-written and informational as well, thank you author for this masterpiece.<br><br>
+                                <span class="govuk-!-font-weight-bold">{{ data['add-a-comment'] }}</span>
+                            </td>
+                            <td class="govuk-table__cell">Jane Dillon<span class="govuk-!-font-weight-bold"> {{ data['commenterName'] }}</span></td>
+                            <td class="govuk-table__cell">16/04/2018</td>
+                        </tr>
+                    </tbody>
+                </table>
 
                 <!-- </div> -->
                 <!-- </div> end of grid parent -->
             </div>
 
-            <!-- Back to top link -->
-            <!-- <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#top"><svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17"><path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path></svg>   Back to top</a> -->
+            <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#top"><svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17"><path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path></svg>   Back to top</a>
 
         </main>
     </div> {% endblock %} </body>
