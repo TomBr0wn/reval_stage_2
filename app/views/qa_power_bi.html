@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} QA Power BI 1 {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/qa_start">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">View PBI reports for Matrix</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="grid-parent">
+                    <div>
+                        <p>PBI Reports</p>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link govuk-!-font-weight-bold" href="/qa_power_bi">PBI Report 1</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/qa_power_bi_2">PBI Report 2</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/qa_power_bi_3">PBI report 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+
+                        <img alt="power bi dashboard " class="govuk-!-width-full" src="/public/images/pbi-16-9-bar-chart.jpg">
+
+                    </div>
+                    <!-- </div> end of grid parent -->
+                </div>
+        </main>
+        </div> {% endblock %} </body>
+
+</html>

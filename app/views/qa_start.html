@@ -5,7 +5,7 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Blank page {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} QA Start {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/property_group_list">Back</a>
         <main class="govuk-main-wrapper">
@@ -36,67 +36,114 @@
 
                         <!----------------------- Start of table ------------------------------->
 
-                        <table class="govuk-table">
+                        <table class="govuk-table govuk-!-font-size-16">
                             <thead class="govuk-table__head">
                                 <tr class="govuk-table__row">
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Matrix name</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Matrix ref</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Description</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">&nbsp;</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">&nbsp;</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">&nbsp;</th>
-                                    <!-- <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th> -->
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Number of properties</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Number valued</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Number failed</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Add comment</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">View PBI report</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Open Matrix</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-fifth">Push matrix to CBD</th>
                                 </tr>
                             </thead>
                             <tbody class="govuk-table__body">
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">Matrix_AAA_1111</td>
                                     <td class="govuk-table__cell">Rooted above a tundra</td>
+                                    <td class="govuk-table__cell">17</td>
+                                    <td class="govuk-table__cell">10</td>
+                                    <td class="govuk-table__cell">4</td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/qa_comment">Add QA comment</a>
+                                        <a class="govuk-link" href="/qa_comment">Add comment</a>
                                     </td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/matrix_rents">View Power BI report</a>
+                                        <a class="govuk-link" href="/qa_power_bi">View PBI report</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Open matrix</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Push matrix to CBD</a>
                                     </td>
                                 </tr>
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">Matrix_XXX_2222</td>
                                     <td class="govuk-table__cell">Formed next to a geyser field</td>
+                                    <td class="govuk-table__cell">17</td>
+                                    <td class="govuk-table__cell">10</td>
+                                    <td class="govuk-table__cell">4</td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/qa_comment">Add QA comment</a>
+                                        <a class="govuk-link" href="/qa_comment">Add comment</a>
                                     </td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/matrix_rents">View Power BI report</a>
+                                        <a class="govuk-link" href="/qa_power_bi">View PBI report</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Open matrix</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Push matrix to CBD</a>
                                     </td>
                                 </tr>
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">Matrix_QQQ_9999</td>
                                     <td class="govuk-table__cell">Headed towards a harsh future</td>
+                                    <td class="govuk-table__cell">17</td>
+                                    <td class="govuk-table__cell">10</td>
+                                    <td class="govuk-table__cell">4</td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/qa_comment">Add QA comment</a>
+                                        <a class="govuk-link" href="/qa_comment">Add comment</a>
                                     </td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/matrix_rents">View Power BI report</a>
+                                        <a class="govuk-link" href="/qa_power_bi">View PBI report</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Open matrix</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Push matrix to CBD</a>
                                     </td>
                                 </tr>
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">Matrix_GGG_1234</td>
                                     <td class="govuk-table__cell">Ventarco is home to goblins</td>
+                                    <td class="govuk-table__cell">17</td>
+                                    <td class="govuk-table__cell">10</td>
+                                    <td class="govuk-table__cell">4</td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/qa_comment">Add QA comment</a>
+                                        <a class="govuk-link" href="/qa_comment">Add comment</a>
                                     </td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/matrix_rents">View Power BI report</a>
+                                        <a class="govuk-link" href="/qa_power_bi">View PBI report</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Open matrix</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Push matrix to CBD</a>
                                     </td>
                                 </tr>
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">Matrix_ZZZ_0000</td>
                                     <td class="govuk-table__cell">Dark wooden rooftops, lavastone walls</td>
+                                    <td class="govuk-table__cell">17</td>
+                                    <td class="govuk-table__cell">10</td>
+                                    <td class="govuk-table__cell">4</td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/qa_comment">Add QA comment</a>
+                                        <a class="govuk-link" href="/qa_comment">Add comment</a>
                                     </td>
                                     <td class="govuk-table__cell">
-                                        <a class="govuk-link" href="/matrix_rents">View Power BI report</a>
+                                        <a class="govuk-link" href="/qa_power_bi">View PBI report</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Open matrix</a>
+                                    </td>
+                                    <td class="govuk-table__cell">
+                                        <a class="govuk-link" href="/#">Push matrix to CBD</a>
                                     </td>
                                 </tr>
                             </tbody>
