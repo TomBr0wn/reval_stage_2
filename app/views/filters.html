@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    {% extends "layout.html" %} {% block pageTitle %} Blank page {% endblock %} {% block content %}
+    {% extends "layout.html" %} {% block pageTitle %} Filters {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/properties_landing">Back</a>
         <main class="govuk-main-wrapper">
@@ -31,7 +31,7 @@
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-initial">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="initial-street">Street</label>
+                                    <label class="govuk-label" for="initial-street">Address contains</label>
                                     <input class="govuk-input govuk-!-width-full" id="initial-street" name="initial-street" type="text" spellcheck="false">
                                 </div>
                             </div>
@@ -138,21 +138,25 @@
                         <h3 class="govuk-heading-m">Size Matrix</h3>
                         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
 
-                            <!----------- SIZE AREA ------------>
+                            <!---------------------------------------------- SIZE MATRIX (AREA) ------------------------------------------------->
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="size-matrix-0" name="size-matrix" type="checkbox" value="Size Area" data-aria-controls="conditional-size-matrix" {{ checked( "size-matrix", "Size Area" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-0">
-                          Size (Area)
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-0">Size (Area)</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-size-matrix">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="size-matrix-street">
-                            Size (Area)
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-street" name="size-matrix-street" type="text" spellcheck="false">
+                                    <label class="govuk-label" for="sort">Area is</label>
+                                    <select class="govuk-select" id="area" name="area">
+                                        <option value="More">More than</option>
+                                        <option value="Less" selected>Less than</option>
+                                    </select>
+                                </div>
+                                <div class="govuk-form-group">
+                                    <label class="govuk-label" for="size-matrix-street">Size (Area)</label>
+                                    <!-- <input class="govuk-input govuk-!-width-one-third" id="size-matrix-street" name="size-matrix-street" type="text" spellcheck="false"> -->
+                                    <input class="govuk-input govuk-input--width-10" id="account-number" name="account-number" type="text" spellcheck="false" aria-describedby="account-number-hint" pattern="[0-9]*" inputmode="numeric">
                                 </div>
                             </div>
 
@@ -161,17 +165,21 @@
                             <!----------- AGE ------------>
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="size-matrix-1" name="size-matrix" type="checkbox" value="Age" data-aria-controls="conditional-size-matrix-1" {{ checked( "size-matrix", "Age" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-1">
-                          Age
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-1">Age</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-size-matrix-1">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="size-matrix-postcode">
-                            Age
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-postcode" name="size-matrix-postcode" type="text" spellcheck="false">
+                                    <label class="govuk-label" for="size-matrix-postcode">Age is</label>
+                                    <br>
+                                    <select class="govuk-select" id="size-matrix-postcode" name="size-matrix-postcode">
+                                        <option value="between" selected>Between</option>
+                                        <option value="updated">More than</option>
+                                        <option value="updated">Less than</option>
+                                    </select>
+                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-postcode" name="size-matrix-postcode" type="number" spellcheck="false">
+                                    <p>and</p>
+                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-postcode" name="size-matrix-postcode" type="number" spellcheck="false">
                                 </div>
                             </div>
 
