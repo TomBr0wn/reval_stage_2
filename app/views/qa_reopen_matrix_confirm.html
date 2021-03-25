@@ -5,13 +5,13 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} QA Push matrix confirm {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} QA Re-open matrix {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/qa_start">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Are you sure? Push matrice to CDB</h1>
+                    <h1 class="govuk-heading-xl">Are you sure you want to re-open Matrix_QQQ_9999?</h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
@@ -36,9 +36,9 @@
                             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
                             <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>You will be in big trouble if this is wrong.</strong>
                         </div>
-                        <form action="qa_push_matrix_success">
+                        <form action="qa_reopen_matrix">
                             <div class="govuk-button-group">
-                                <button class="govuk-button" data-module="govuk-button">Push to CDB</button>
+                                <button class="govuk-button" data-module="govuk-button">Re-open</button>
                                 <a class="govuk-link" href="qa_start">Cancel</a>
                             </div>
                         </form>

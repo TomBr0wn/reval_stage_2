@@ -5,13 +5,13 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Property group: Power BI 1 {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} QA Matrix {% endblock %} {% block content %}
     <div class="govuk-width-container">
-        <a class="govuk-back-link" href="/property_group_list">Back</a>
+        <a class="govuk-back-link" href="/qa_start">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Property group Power BI report Type 1</h1>
+                    <h1 class="govuk-heading-xl">QA: Matrix_QQQ_9999 </h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
@@ -45,13 +45,20 @@
                         </div>
                     </div>
                     <div>
+                        <form action="/filters">
+                            <div class="govuk-button-group">
+                                <button class="govuk-button" data-module="govuk-button">Show Filters</button>
+                                <a class="govuk-link" href="qa_reopen_matrix">View Power BI map</a>
+                            </div>
+                        </form>
                         <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
                         <p class="govuk-body-s govuk-!-display-inline">None</p>
-                        <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-bar-chart.jpg">
+                        <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table">
                     </div>
-                    <!-- </div> end of grid parent -->
                 </div>
+                <!-- </div> end of grid parent -->
+            </div>
         </main>
-        </div> {% endblock %} </body>
+    </div> {% endblock %} </body>
 
 </html>
