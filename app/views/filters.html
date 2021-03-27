@@ -147,7 +147,7 @@
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-size-matrix">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="sort">Area is</label>
+                                    <label class="govuk-label" for="area options">Area is</label>
                                     <select class="govuk-select" id="area" name="area">
                                         <option value="More">More than</option>
                                         <option value="Less" selected>Less than</option>
@@ -177,50 +177,74 @@
                                         <option value="updated">More than</option>
                                         <option value="updated">Less than</option>
                                     </select>
-                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-postcode" name="size-matrix-postcode" type="number" spellcheck="false">
-                                    <p>and</p>
-                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-postcode" name="size-matrix-postcode" type="number" spellcheck="false">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="size-matrix-postcode">&nbsp;</label>
+                                        <input class="govuk-input govuk-!-width-one-half" id="size-matrix-postcode" name="size-matrix-postcode" type="number" spellcheck="false">
+                                    </div>
+                                    <div class="govuk-form-group">
+                                        <p>and</p>
+                                        <input class="govuk-input govuk-!-width-one-half" id="size-matrix-postcode" name="size-matrix-postcode" type="number" spellcheck="false">
+                                    </div>
                                 </div>
                             </div>
 
-                            <!----------- C/H ------------>
+                            <!----------- CENTRAL HEATING ------------>
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="size-matrix-2" name="size-matrix" type="checkbox" value="C H" data-aria-controls="conditional-size-matrix-2" {{ checked( "size-matrix", "C H" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-2">
-                          C/H
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-2">Central Heating</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-size-matrix-2">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="size-matrix-postcode">
-                            C/H
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-postcode" name="size-matrix-postcode" type="text" spellcheck="false">
+                                    <div class="govuk-radios">
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="heating-n" name="heating" type="radio" value="central-heating-n">
+                                            <label class="govuk-label govuk-radios__label" for="heating-n">N (full name)</label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="heating-f" name="heating" type="radio" value="central-heating-f">
+                                            <label class="govuk-label govuk-radios__label" for="heating-f">F (full name)</label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="heating-p" name="heating" type="radio" value="central-heating-p">
+                                            <label class="govuk-label govuk-radios__label" for="heating-p">P (full name)</label>
+                                        </div>
+                                        <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="heating-f-p" name="heating" type="radio" value="central-heating-f-p">
+                                            <label class="govuk-label govuk-radios__label" for="heating-f-p">F&P (full name)</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!----------- PASS LIFT ------------>
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="size-matrix-3" name="size-matrix" type="checkbox" value="Pass Lift" data-aria-controls="conditional-size-matrix-3" {{ checked( "size-matrix", "PAss Lift" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-3">
-                          Pass Lift
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="size-matrix-3">Pass Lift</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-size-matrix-3">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="size-matrix-postcode">
-                            Pass Lift
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="size-matrix-postcode" name="size-matrix-postcode" type="text" spellcheck="false">
+                                    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                                        <legend class="govuk-fieldset__legend">This address</legend>
+                                        <div class="govuk-radios">
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="heating-n" name="heating" type="radio" value="central-heating-n">
+                                                <label class="govuk-label govuk-radios__label" for="heating-n">Has a passenger lift</label>
+                                            </div>
+                                            <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="heating-f" name="heating" type="radio" value="central-heating-f">
+                                                <label class="govuk-label govuk-radios__label" for="heating-f">Does not have a passenger lift</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
-                    <!------------------------------------------------------ MIDDLE COLUMN ------------------------------------------------------->
+                    <!------------------------------------------------------ RENTAL INFO ------------------------------------------------------->
                     <div class="govuk-grid-column-one-third">
                         <h3 class="govuk-heading-m">Rental Information</h3>
                         <div class="govuk-checkboxes" data-module="govuk-checkboxes">
@@ -229,17 +253,63 @@
 
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="rent-info-0" name="rent-info" type="checkbox" value="Data of rent" data-aria-controls="conditional-rent-info" {{ checked( "rent-info", "Data of rent" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="rent-info-0">
-                          Effective data of rent
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="rent-info-0">Effective data of rent</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-rent-info">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="rent-info-street">
-                            Effective data of rent
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="rent-info-street" name="rent-info-street" type="text" spellcheck="false">
+                                    <label class="govuk-label" for="size-matrix-postcode">Look for rents</label>
+                                    <br>
+                                    <select class="govuk-select" id="size-matrix-postcode" name="size-matrix-postcode">
+                                        <option value="between" selected>Between</option>
+                                        <option value="updated">Before</option>
+                                        <option value="updated">Less than</option>
+                                    </select>
+                                </div>
+                                <div class="govuk-form-group">
+                                    <div class="govuk-date-input" id="dob">
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="govuk-form-group">
+                                    <p>and</p>
+                                    <div class="govuk-date-input" id="dob">
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -255,27 +325,75 @@
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-rent-info-1">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="rent-info-postcode">
-                            Rent commencement date
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="address-postcode" name="address-postcode" type="text" spellcheck="false">
+                                    <label class="govuk-label" for="size-matrix-postcode">Look for rents</label>
+                                    <br>
+                                    <select class="govuk-select" id="size-matrix-postcode" name="size-matrix-postcode">
+                                        <option value="between" selected>Between</option>
+                                        <option value="updated">Before</option>
+                                        <option value="updated">Less than</option>
+                                    </select>
+                                </div>
+                                <div class="govuk-form-group">
+                                    <div class="govuk-date-input" id="dob">
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="govuk-form-group">
+                                    <p>and</p>
+                                    <div class="govuk-date-input" id="dob">
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                        <div class="govuk-date-input__item">
+                                            <div class="govuk-form-group">
+                                                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+                                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!----------- RSI ------------>
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="rent-info-2" name="rent-info" type="checkbox" value="RSI" data-aria-controls="conditional-rent-info-2" {{ checked( "rent-info", "RSI" )}}>
-                                <label class="govuk-label govuk-checkboxes__label" for="rent-info-2">
-                          RSI
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="rent-info-2">Rent status indicator</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-rent-info-2">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="rent-info-postcode">
-                            RSI
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="address-postcode" name="address-postcode" type="text" spellcheck="false">
+                                    <label class="govuk-label" for="rent-info-postcode">Rent status indicator is</label>
+                                    <select class="govuk-select" id="size-matrix-postcode" name="size-matrix-postcode">
+                                        <option value="between" selected>Not to be adjusted</option>
+                                        <option value="updated">Something else</option>
+                                        <option value="updated">Another thing</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -283,17 +401,32 @@
                             <div class="govuk-checkboxes__item">
                                 <input class="govuk-checkboxes__input" id="rent-info-3" name="rent-info" type="checkbox" value="Rent value" data-aria-controls="conditional-rent-info-3 {{
                           checked(" rent-info ", "Rent value " )}}">
-                                <label class="govuk-label govuk-checkboxes__label" for="rent-info-3">
-                          Rent value
-                        </label>
+                                <label class="govuk-label govuk-checkboxes__label" for="rent-info-3">Rent value</label>
                             </div>
 
                             <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-rent-info-3">
                                 <div class="govuk-form-group">
-                                    <label class="govuk-label" for="rent-info-postcode">
-                            Rent value
-                          </label>
-                                    <input class="govuk-input govuk-!-width-full" id="address-postcode" name="address-postcode" type="text" spellcheck="false">
+                                    <div class="govuk-form-group">
+                                        <label class="govuk-label" for="rent-info-postcode">Look for values</label>
+                                        <select class="govuk-select" id="size-matrix-postcode" name="size-matrix-postcode">
+                                        <option value="between" selected>Between</option>
+                                        <option value="updated">Above</option>
+                                        <option value="updated">Below</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="govuk-form-group">
+                                    <div class="govuk-input__wrapper">
+                                        <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                                        <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+                                    </div>
+                                </div>
+                                <p>and</p>
+                                <div class="govuk-form-group">
+                                    <div class="govuk-input__wrapper">
+                                        <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                                        <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+                                    </div>
                                 </div>
                             </div>
 
@@ -318,6 +451,9 @@
                     </div>
                 </div>
             </form>
+            <div class="govuk-!-margin-top-6">
+                <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link " href="#top "><svg role="presentation " focusable="false " class="app-back-to-top__icon " xmlns="http://www.w3.org/2000/svg " width="13 " height="17 " viewBox="0 0 13 17 "><path fill="currentColor " d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z "></path></svg>   Back to top</a>
+            </div>
         </main>
     </div>{% endblock %}
 </body>

@@ -1,174 +1,59 @@
-<table class="govuk-table govuk-!-font-size-16">
-    <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Address</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">????</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Price</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Has comments?</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th>
-            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th>
-        </tr>
-    </thead>
-    <tbody class="govuk-table__body">
+<div class="govuk-form-group">
+    <div class="govuk-radios">
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="heating-n" name="heating" type="radio" value="central-heating-n">
+            <label class="govuk-label govuk-radios__label" for="heating-n">N</label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="heating-f" name="heating" type="radio" value="central-heating-f">
+            <label class="govuk-label govuk-radios__label" for="heating-f">F</label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="heating-p" name="heating" type="radio" value="central-heating-p">
+            <label class="govuk-label govuk-radios__label" for="heating-p">P</label>
+        </div>
+        <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="heating-f-p" name="heating" type="radio" value="central-heating-f-p">
+            <label class="govuk-label govuk-radios__label" for="heating-f-p">F&P</label>
+        </div>
+    </div>
+</div>
 
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
+<div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend">This address</legend>
+        <div class="govuk-radios">
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="heating-n" name="heating" type="radio" value="central-heating-n">
+                <label class="govuk-label govuk-radios__label" for="heating-n">Has a passenger lift</label>
+            </div>
+            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="heating-f" name="heating" type="radio" value="central-heating-f">
+                <label class="govuk-label govuk-radios__label" for="heating-f">Does not have a passenger lift</label>
+            </div>
+        </div>
+    </fieldset>
+</div>
 
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
-                </div>
-
-            </td>
-            <td class="govuk-table__cell" name="singleLeedsAddress">40 Roman Rd, Leeds, LS2 8ZE</td>
-            <td class="govuk-table__cell">5438292000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">38 Park Square North, Leeds, LS1 2NY</td>
-            <td class="govuk-table__cell">5438094000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">83 Albion Street, Leeds, LS1 5AP</td>
-            <td class="govuk-table__cell">5438096000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">56 Roman Rd, Leeds, LS2 8ZE</td>
-            <td class="govuk-table__cell">5440222000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">12 Grand Arcade, Leeds, LS1 6PG</td>
-            <td class="govuk-table__cell">5687184000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">18 Grand Arcade, Leeds, LS1 6PG</td>
-            <td class="govuk-table__cell">5762057000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">78 Roman Rd, Leeds, LS2 8ZE</td>
-            <td class="govuk-table__cell">5864503000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">34 Grand Arcade, Leeds, LS1 6PG</td>
-            <td class="govuk-table__cell">5715735000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-        <tr class="govuk-table__row">
-            <td class="govuk-table__cell">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                    <label class="govuk-label govuk-checkboxes__label" for="waste">&nbsp;</label>
-                </div>
-            </td>
-            <td class="govuk-table__cell">51 Grand Arcade, Leeds, LS1 6PG</td>
-            <td class="govuk-table__cell">5438091000</td>
-            <td class="govuk-table__cell">£00.00</td>
-            <td class="govuk-table__cell">YES</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell">&nbsp;</td>
-            <td class="govuk-table__cell"><a href="/view_single_address">Open property</a></td>
-            <td class="govuk-table__cell"><a href="/#">Add Price</a></td>
-        </tr>
-
-    </tbody>
-</table>
+<div class="govuk-form-group">
+    <div class="govuk-date-input" id="dob">
+        <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" autocomplete="bday-day" pattern="[0-9]*" inputmode="numeric">
+            </div>
+        </div>
+        <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" autocomplete="bday-month" pattern="[0-9]*" inputmode="numeric">
+            </div>
+        </div>
+        <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" autocomplete="bday-year" pattern="[0-9]*" inputmode="numeric">
+            </div>
+        </div>
+    </div>
+</div>
