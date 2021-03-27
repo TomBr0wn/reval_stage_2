@@ -1,0 +1,155 @@
+{% extends "layout.html" %} {% block pageTitle %} Property Group Summary {% endblock %} {% block beforeContent %}
+<a class="govuk-back-link" href="/description">Back</a> {% endblock %} {% block content %}
+
+
+<form action="/property_group_list" class="form" id="form" method="post" name="form">
+
+
+    <div class="govuk-form-group" id="user-id-header">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <h1 class="govuk-heading-xl">Property Group summary</h1>
+
+                <!-- 9898 -->
+
+                <dl class="govuk-summary-list">
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Description</dt>
+                        <dd class="govuk-summary-list__value">{{ data['groupDescription'] }}</dd>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/description_edit">
+								Change<span class="govuk-visually-hidden"> description</span>
+							</a>
+                            <input type="hidden" value="{{ data['groupDescription'] }}">
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Regional valuation unit</dt>
+                        <ul class="govuk-list govuk-list--bullet">
+                            {% for unit in data['regValUnit'] %}
+                            <li>{{ unit }}</li>
+                            {% endfor %}
+                        </ul>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/regional_valuation_unit">
+								Change<span class="govuk-visually-hidden"> regional valuation unit</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Economic region</dt>
+                        <ul class="govuk-list govuk-list--bullet">
+                            {% for unit in data['econRegions'] %}
+                            <li>{{ unit }}</li>
+                            {% endfor %}
+                        </ul>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/econ_region">
+								Change<span class="govuk-visually-hidden"> economic region</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Billing authority code</dt>
+                        <ul class="govuk-list govuk-list--bullet">
+                            {% for unit in data['billingAuthority'] %}
+                            <li>{{ unit }}</li>
+                            {% endfor %}
+                        </ul>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/billing_code">
+								Change<span class="govuk-visually-hidden"> Billing authority code</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Bulk class indicators - current list</dt>
+                        <ul class="govuk-list govuk-list--bullet">
+                            {% for unit in data['bulkClassInd'] %}
+                            <li>{{ unit }}</li>
+                            {% endfor %}
+                        </ul>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/bci_current_list">
+								Change<span class="govuk-visually-hidden"> bci current list</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Sub location</dt>
+                        <dd class="govuk-summary-list__value">{{ data['subLocation'] }}</dd>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/sub_location">
+								Change<span class="govuk-visually-hidden"> sub location</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Scat code</dt>
+                        <dd class="govuk-summary-list__value">{{ data['selectScat'] }}</dd>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/scat_code">
+								Change<span class="govuk-visually-hidden"> scat code</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Scat suffix</dt>
+                        <ul>
+                            {% for unit in data['scatCodeSuffix'] %}
+                            <li>{{ unit }}</li>
+                            {% endfor %}
+                        </ul>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/scat_suffix">
+								Change<span class="govuk-visually-hidden"> scat suffix</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Is current live assessment</dt>
+                        <dd class="govuk-summary-list__value">{{ data['assessmentType'] }}</dd>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/current_live_assessment">
+								Change<span class="govuk-visually-hidden"> current live assessment</span>
+							</a>
+                        </dd>
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Pattern matrix - current list</dt>
+                        <dd class="govuk-summary-list__value">{{ data['pattern-matrix-current'] }}</dd>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/pattern_matrix_current">
+								Change<span class="govuk-visually-hidden"> pattern_matrix_current</span>
+							</a>
+                        </dd>s
+                    </div>
+
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">Pattern matrix - reval list</dt>
+                        <dd class="govuk-summary-list__value">{{ data['pattern-matrix-reval'] }}</dd>
+                        <dd class="govuk-summary-list__actions">
+                            <a class="govuk-link" href="/pattern_matrix_reval">
+								Change<span class="govuk-visually-hidden"> pattern matrix reval</span>
+							</a>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- <button class="govuk-button" data-module="govuk-button" id="passRowData">Save and continue</button> -->
+    <button class="govuk-button" type="submit" data-module="govuk-button" id="xxxx">Save and continue</button>
+</form>
+
+
+{% endblock %}
