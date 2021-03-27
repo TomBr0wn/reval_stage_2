@@ -5,35 +5,49 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} QA Power BI 1 {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Property group: Power BI 1 {% endblock %} {% block content %}
     <div class="govuk-width-container">
-        <a class="govuk-back-link" href="/qa_start">Back</a>
+        <a class="govuk-back-link" href="/property_group_list">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">QA Power BI reports Type 1</h1>
+                    <h1 class="govuk-heading-xl">Property group Power BI report Type 1</h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
                 <div class="grid-parent">
                     <div>
-                        <p>PBI Reports</p>
-                        <ul class="govuk-list">
+                        <h2 class="govuk-heading-m">PBI Reports</h2>
+                        <ul class="govuk-list govuk-list--spaced">
                             <li>
-                                <a class="govuk-link govuk-!-font-weight-bold" href="/qa_power_bi">PBI Report 1</a>
+                                <a class="govuk-link" href="/properties_landing">Properties</a>
                             </li>
                             <li>
-                                <a class="govuk-link" href="/qa_power_bi_2">PBI Report 2</a>
+                                <a class="govuk-link" href="/rentals_landing">Rentals</a>
                             </li>
                             <li>
-                                <a class="govuk-link" href="/qa_power_bi_3">PBI report 3</a>
+                                <a class="govuk-link" href="/properties_landing_power_bi">PBI tbc 1</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/properties_landing_power_bi_2">PBI tbc 2</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/properties_landing_power_bi_3">PBI tbc 3</a>
                             </li>
                         </ul>
+                        <div>
+                            <h2 class="govuk-heading-m">Matrices</h2>
+                            <ul class="govuk-list">
+
+                                <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div>
-
-                        <img alt="power bi dashboard " class="govuk-!-width-full" src="/public/images/pbi-16-9-bar-chart.jpg">
-
+                        <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
+                        <p class="govuk-body-s govuk-!-display-inline">None</p>
+                        <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-uarn.jpg">
                     </div>
                     <!-- </div> end of grid parent -->
                 </div>
