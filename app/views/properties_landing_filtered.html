@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Property group overview {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/property_group_list">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Industrials in Leeds: Properties</h1>
+                </div>
+            </div>
+
+            <div class="grid-parent">
+                <div>
+                    <!-- Start of nav -->
+                    <h2 class="govuk-heading-m">PBI Reports</h2>
+                    <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 ">
+                        <li class="blueLeftBorder govuk-!-padding-left-2">
+                            <a class="govuk-link" href="/properties_landing">Properties map</a>
+                            <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
+                                <li><a class="govuk-link" href="properties_powerbi_table.html">- Properties table view</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/rentals_landing">Rentals map</a>
+                            <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
+                                <li><a class="govuk-link" href="rentals_powerbi_table.html">- Rentals table view</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/properties_landing_power_bi">PBI tbc 1</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/properties_landing_power_bi_2">PBI tbc 2</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/properties_landing_power_bi_3">PBI tbc 3</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <h2 class="govuk-heading-m">Matrices</h2>
+                        <ul class="govuk-list govuk-!-font-size-19">
+                            <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End of Nav -->
+                </div>
+                <div>
+                    <form action="/filters">
+                        <div class="govuk-button-group">
+                            <button class="govuk-button" data-module="govuk-button">Show Filters</button>
+                            <!-- <a class="govuk-link" href="properties_powerbi_table.html">View Power BI table</a> -->
+                        </div>
+                    </form>
+                    <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Street x </strong></p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Age x </strong></p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Rent value x </strong></p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-red govuk-!-margin-right-2"><strong><a class="filter-pill-red" href="properties_landing">Clear all filters x </a></strong></p>
+                    <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-props.jpg">
+                </div>
+            </div>
+            <!-- </div> end of grid parent -->
+
+        </main>
+    </div> {% endblock %} </body>
+
+</html>

@@ -28,3 +28,18 @@ $govuk-assets-path: '/govuk/assets/';
 .blueLeftBorder {
     border-left: 0.4rem #1d70b8 solid;
 }
+
+.filter-pill-blue {
+    color: #5694ca;
+    background-color: #ffffff;
+    border: 1px solid #5694ca;
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+}
+
+a.filter-pill-red {
+    color: #ffffff;
+    background-color: #d4351c;
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+}
