@@ -14,51 +14,57 @@
                     <h1 class="govuk-heading-xl">Industrials in Leeds: Properties</h1>
                 </div>
             </div>
-            <div class="govuk-grid-row">
-                <div class="grid-parent">
+            <div class="grid-parent">
+                <div>
+                    <!-- Start of nav -->
+                    <h2 class="govuk-heading-m">PBI Reports</h2>
+                    <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19">
+                        <li class="blueLeftBorder govuk-!-padding-left-2">
+                            <a class="govuk-link" href="/properties_landing">Properties map</a>
+                            <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
+                                <li><a class="govuk-link" href="properties_powerbi_table.html">- Properties table view</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/rentals_landing">Rentals map</a>
+                            <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
+                                <li><a class="govuk-link" href="rentals_powerbi_table.html">- Rentals table view</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/properties_landing_power_bi">PBI tbc 1</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/properties_landing_power_bi_2">PBI tbc 2</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link" href="/properties_landing_power_bi_3">PBI tbc 3</a>
+                        </li>
+                    </ul>
                     <div>
-                        <h2 class="govuk-heading-m">PBI Reports</h2>
-                        <ul class="govuk-list govuk-list--spaced">
-                            <li>
-                                <a class="govuk-link" href="/properties_landing">Properties</a>
-                            </li>
-                            <li>
-                                <a class="govuk-link" href="/rentals_landing">Rentals</a>
-                            </li>
-                            <li>
-                                <a class="govuk-link" href="/properties_landing_power_bi">PBI tbc 1</a>
-                            </li>
-                            <li>
-                                <a class="govuk-link" href="/properties_landing_power_bi_2">PBI tbc 2</a>
-                            </li>
-                            <li>
-                                <a class="govuk-link" href="/properties_landing_power_bi_3">PBI tbc 3</a>
+                        <h2 class="govuk-heading-m">Matrices</h2>
+                        <ul class="govuk-list govuk-!-font-size-19">
+                            <a class="govuk-link" href="/matrices_landing">Matrices</a>
                             </li>
                         </ul>
-                        <div>
-                            <h2 class="govuk-heading-m">Matrices</h2>
-                            <ul class="govuk-list">
-
-                                <a class="govuk-link" href="/matrices_landing">Matrices</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <div>
-                        <form action="/filters">
-                            <div class="govuk-button-group">
-                                <button class="govuk-button" data-module="govuk-button">Show Filters</button>
-                                <a class="govuk-link" href="properties_landing">View Power BI map</a>
-                            </div>
-                        </form>
-                        <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
-                        <p class="govuk-body-s govuk-!-display-inline">None</p>
-                        <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table.jpg">
-                    </div>
+                    <!-- End of Nav -->
                 </div>
-                <!-- </div> end of grid parent -->
+                <div>
+                    <form action="/filters">
+                        <div class="govuk-button-group">
+                            <button class="govuk-button" data-module="govuk-button">Show Filters</button>
+                            <!-- <a class="govuk-link" href="properties_landing">View Power BI map</a> -->
+                        </div>
+                    </form>
+                    <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
+                    <p class="govuk-body-s govuk-!-display-inline">None</p>
+                    <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table.jpg">
+                </div>
             </div>
-        </main>
-    </div> {% endblock %} </body>
+            <!-- </div> end of grid parent -->
+    </div>
+    </main>
+    {% endblock %} </body>
 
 </html>
