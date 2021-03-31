@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Hereditaments in matrix {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/matrices_landing">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">EXTRA SCREEN HERE Rents in selected matrix</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <!-- <div class="grid-parent"> -->
+
+                    <div>
+                        <form action="">
+                            <div class="govuk-button-group">
+                                <button formaction="/matrix_rents_attach_confirm" class="govuk-button" data-module="govuk-button">Attach rent to matrix</button>
+                                <!-- <button formaction="/matrix_rents_exclude" class="govuk-button govuk-button--secondary" data-module="govuk-button">Exclude rent from matrix</button> -->
+                                <!-- <a class="govuk-link" href="properties_landing">View as map</a> -->
+                            </div>
+                        </form>
+
+                        <!-- <img alt="power bi dashboard " class="govuk-!-width-full" src="/public/images/map-no-filter.png"> -->
+
+                        <!----------------------- Start of table ------------------------------->
+
+                        <table class="govuk-table govuk-!-font-size-16">
+                            <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth"><a href="matrix_rents_attach_page">Select all</a></th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Address</th>
+                                    <!-- <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Reval case number</th> -->
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">FOR case number</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Size</th>
+                                    <!-- <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Useful Indicator</th> -->
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">RSI</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Analysis type</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Price per m2</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Effective date of rent</th>
+                                    <!-- <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th> -->
+                                </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" checked value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell" name="singleLeedsAddress">1 New Matrix Street, Leeds, LS2 8NM</td>
+                                    <td class="govuk-table__cell">5438292000</td>
+                                    <!-- <td class="govuk-table__cell">1111111111</td> -->
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <!-- <td class="govuk-table__cell">A</td> -->
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">20 February 2017</td>
+                                    <!-- <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td> -->
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" checked value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell" name="singleLeedsAddress">2 New Matrix Street, Leeds, LS2 8NM</td>
+                                    <td class="govuk-table__cell">5438094000</td>
+                                    <!-- <td class="govuk-table__cell">1111111111</td> -->
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <!-- <td class="govuk-table__cell">A</td> -->
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">30 August 2017</td>
+                                    <!-- <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td> -->
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" checked value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell" name="singleLeedsAddress">3 New Matrix Street, Leeds, LS2 8NM</td>
+                                    <td class="govuk-table__cell">5438096000</td>
+                                    <!-- <td class="govuk-table__cell">1111111111</td> -->
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <!-- <td class="govuk-table__cell">X</td> -->
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">29 November 2017</td>
+                                    <!-- <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td> -->
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+                <!-- </div> -->
+                <!-- </div> end of grid parent -->
+            </div>
+        </main>
+    </div> {% endblock %} </body>
+
+</html>
