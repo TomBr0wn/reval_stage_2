@@ -29,6 +29,14 @@ $govuk-assets-path: '/govuk/assets/';
     grid-row-gap: 0px;
 }
 
+.first-grid-col {
+    -ms-grid-column: 1;
+}
+
+.second-grid-col {
+    -ms-grid-column: 2;
+}
+
 .blueLeftBorder {
     border-left: 0.4rem #1d70b8 solid;
 }
