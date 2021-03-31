@@ -18,15 +18,15 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .grid-parent {
+    display: -ms-grid;
     display: grid;
+    // IE prefixes
+    -ms-grid-columns: 2fr 10fr;
+    -ms-grid-rows: 1fr;
     grid-template-columns: 2fr 10fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    // IE prefixes
-    display: -ms-grid;
-    -ms-grid-columns: 2fr 10fr;
-    -ms-grid-rows: 1fr;
 }
 
 .blueLeftBorder {
