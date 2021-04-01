@@ -14,66 +14,65 @@
                     <h1 class="govuk-heading-xl">QA: Add comment</h1>
                 </div>
             </div>
-            <div class="govuk-grid-row">
-                <!-------------------------- FORM ------------------------->
-                <form action="/qa_comment_success">
 
-                    <div class="govuk-form-group">
+            <!-------------------------- FORM ------------------------->
+            <form action="/qa_comment_success">
 
-                        <div class="govuk-form-group">
-                            <label class="govuk-label" for="commenterName">Your name</label>
-                            <input class="govuk-input govuk-!-width-one-half" id="commenterName" name="commenterName" type="text">
-                        </div>
-
-                        <div id="more-detail-hint" class="govuk-label">
-                            Add comment here
-                        </div>
-                        <textarea class="govuk-textarea govuk-!-width-one-half" id="add-a-comment" name="add-a-comment" rows="8" aria-describedby="add-a-comment-hint"></textarea>
+                <div>
+                    <div>
+                        <p class="govuk-!-font-weight-bold">Your PID: <span>727953</span></p>
+                        <h4 class="govuk-heading-s">Address</h4>
+                        <p class="govuk-!-font-size-24">40 Roman Rd <br> Leeds <br> LS2 8ZE</p>
                     </div>
 
-                    <div class="govuk-button-group">
-                        <button class="govuk-button" data-module="govuk-button">Save comment</button>
-                        <a class="govuk-link" href="/qa_start">Return to Matrices</a>
-                    </div>
-
-                </form>
-
-                <!--------------------- START OF TABLE ----------------------------->
+                    <div id=" more-detail-hint " class="govuk-hint ">Add comment here to append to the survey units in the table.</div>
+                    <textarea class="govuk-textarea govuk-!-width-one-half " id="add-a-comment " name="add-a-comment " rows="8 " aria-describedby="add-a-comment-hint "></textarea>
+                </div>
 
 
-                <table class="govuk-table  govuk-!-margin-right-9 govuk-!-font-size-16">
-                    <thead class="govuk-table__head">
-                        <tr class="govuk-table__row">
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Matrix ref</th>
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Description</th>
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number of properties</th>
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number valued</th>
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number failed</th>
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Existing comment</th>
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comment last updated by:</th>
-                            <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comment last updated on:</th>
-                        </tr>
-                    </thead>
-                    <tbody class="govuk-table__body">
-                        <tr class="govuk-table__row">
-                            <td class="govuk-table__cell">Matrix_AAA_1111</td>
-                            <td class="govuk-table__cell">Rooted above a tundra</td>
-                            <td class="govuk-table__cell">17</td>
-                            <td class="govuk-table__cell">10</td>
-                            <td class="govuk-table__cell">4</td>
-                            <td class="govuk-table__cell">I'm always relieved when someone is delivering a eulogy and I realise I'm listening to it.<br><br>
-                                <span class="govuk-!-font-weight-bold">{{ data['add-a-comment'] }}</span>
-                            </td>
-                            <td class="govuk-table__cell">Craig E Warner<span class="govuk-!-font-weight-bold"> {{ data['commenterName'] }}</span></td>
-                            <td class="govuk-table__cell">10/04/2017</td>
-                        </tr>
+                <div class="govuk-button-group">
+                    <button class="govuk-button" data-module="govuk-button">Save comment</button>
+                    <a class="govuk-link" href="/qa_start">Return to Matrices</a>
+                </div>
 
-                    </tbody>
-                </table>
+            </form>
 
-                <!-- </div> -->
-                <!-- </div> end of grid parent -->
-            </div>
+            <!--------------------- START OF TABLE ----------------------------->
+
+
+            <table class="govuk-table  govuk-!-margin-right-9 govuk-!-font-size-16">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Matrix ref</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Description</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number of properties</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number valued</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Number failed</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Existing comment</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comment last updated by:</th>
+                        <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comment last updated on:</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell">Matrix_AAA_1111</td>
+                        <td class="govuk-table__cell">Rooted above a tundra</td>
+                        <td class="govuk-table__cell">17</td>
+                        <td class="govuk-table__cell">10</td>
+                        <td class="govuk-table__cell">4</td>
+                        <td class="govuk-table__cell">I'm always relieved when someone is delivering a eulogy and I realise I'm listening to it.<br><br>
+                            <span class="govuk-!-font-weight-bold">{{ data['add-a-comment'] }}</span>
+                        </td>
+                        <td class="govuk-table__cell">Craig E Warner<span class="govuk-!-font-weight-bold"> {{ data['commenterName'] }}</span></td>
+                        <td class="govuk-table__cell">10/04/2017</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!-- </div> -->
+            <!-- </div> end of grid parent -->
+
 
             <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#top"><svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17"><path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path></svg>   Back to top</a>
 
