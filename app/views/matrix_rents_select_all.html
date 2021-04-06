@@ -11,7 +11,7 @@
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Hereditaments in selected matrix</h1>
+                    <h1 class="govuk-heading-xl">Rents in selected matrix</h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
@@ -21,9 +21,9 @@
                     <div>
                         <form action="">
                             <div class="govuk-button-group">
-                                <button formaction="/comments" class="govuk-button" data-module="govuk-button">Add comment to selected</button>
-                                <button formaction="/price" class="govuk-button govuk-button--secondary" data-module="govuk-button">Add value to selected</button>
-                                <a class="govuk-link" href="/matrix-hereditaments_push_cdb">Push price(s) to cdb</a>
+                                <button formaction="/matrix_rents_attach" class="govuk-button" data-module="govuk-button">Attach rent to matrix</button>
+                                <button formaction="/matrix_rents_exclude" class="govuk-button govuk-button--secondary" data-module="govuk-button">Exclude rent from matrix</button>
+                                <!-- <a class="govuk-link" href="properties_landing">View as map</a> -->
                             </div>
                         </form>
 
@@ -34,16 +34,15 @@
                         <table class="govuk-table govuk-!-font-size-16">
                             <thead class="govuk-table__head">
                                 <tr class="govuk-table__row">
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth"><a href="matrix_hereditamants_select_all">Select all</a></th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth"><a href="matrix_rents">Select all</a></th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Address</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Total significant area</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Price per m2 of 2017</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Proposed price</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comments Y/N</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent analysed /sqM</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent RSI</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent Analysis Type</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent useful ind</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Reval case number</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">FOR/ORI case number</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Size</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Useful Indicator</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">RSI</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Analysis type</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Effective date of rent</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th>
                                 </tr>
                             </thead>
@@ -52,165 +51,181 @@
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell" name="singleLeedsAddress">40 Roman Rd, Leeds, LS2 8ZE</td>
+                                    <td class="govuk-table__cell">5438292000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">20 February 2017</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
 
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">38 Park Square North, Leeds, LS1 2NY</td>
+                                    <td class="govuk-table__cell">5438094000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">30 August 2017</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
 
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">83 Albion Street, Leeds, LS1 5AP</td>
+                                    <td class="govuk-table__cell">5438096000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">X</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">29 November 2017</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
-
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">56 Roman Rd, Leeds, LS2 8ZE</td>
+                                    <td class="govuk-table__cell">5440222000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">12 January 2018</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
 
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">12 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">5687184000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">M</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">20 August 2018</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
 
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">18 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">5762057000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">M</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">15 March 2019</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
 
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">78 Roman Rd, Leeds, LS2 8ZE</td>
+                                    <td class="govuk-table__cell">5864503000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">28 October 2019</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
 
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">34 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">5715735000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">X</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">28 September 2020</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
 
                                 <tr class="govuk-table__row">
                                     <td class="govuk-table__cell">
                                         <div class="govuk-checkboxes__item">
-                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1" checked>
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
                                     <td class="govuk-table__cell">51 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">5438091000</td>
+                                    <td class="govuk-table__cell">1111111111</td>
                                     <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">10,000m2</td>
-                                    <td class="govuk-table__cell">£00.00</td>
-                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">X</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
                                     <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">&nbsp;</td>
-                                    <td class="govuk-table__cell">A</td>
+                                    <td class="govuk-table__cell">4 February 2021</td>
+                                    <td class="govuk-table__cell">
+                                        <a href="/matrix_rents_comment">Add comment</a>
+                                    </td>
                                 </tr>
-
                             </tbody>
                         </table>
                     </div>
@@ -219,9 +234,6 @@
                 </div>
                 <!-- </div> -->
                 <!-- </div> end of grid parent -->
-
-                <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link " href="#top "><svg role="presentation " focusable="false " class="app-back-to-top__icon " xmlns="http://www.w3.org/2000/svg " width="13 " height="17 " viewBox="0 0 13 17 "><path fill="currentColor " d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z "></path></svg>   Back to top</a>
-
             </div>
         </main>
     </div> {% endblock %} </body>

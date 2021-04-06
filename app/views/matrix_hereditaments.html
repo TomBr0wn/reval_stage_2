@@ -5,7 +5,7 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Hereditaments in matrix {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Hereditaments in selected matrix {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/matrices_landing">Back</a>
         <main class="govuk-main-wrapper">
@@ -21,9 +21,9 @@
                     <div>
                         <form action="">
                             <div class="govuk-button-group">
-                                <button formaction="/comments" class="govuk-button" data-module="govuk-button">Add comment to selected</button>
+                                <button formaction="/comments" class="govuk-button" data-module="govuk-button">Add remark to selected</button>
                                 <button formaction="/price" class="govuk-button govuk-button--secondary" data-module="govuk-button">Add value to selected</button>
-                                <a class="govuk-link" href="/matrix-hereditaments_push_cdb">Push price(s) to cdb</a>
+                                <!-- <a class="govuk-link" href="/matrix-hereditaments_push_cdb">Push price(s) to cdb</a> -->
                             </div>
                         </form>
 
@@ -37,8 +37,8 @@
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth"><a href="matrix_hereditamants_select_all">Select all</a></th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Address</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Total significant area</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Price per m2 of 2017</th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Proposed price</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Current List £/m2</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Reval List £/m2</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comments Y/N</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent analysed /sqM</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent RSI</th>

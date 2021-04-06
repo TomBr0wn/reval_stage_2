@@ -5,13 +5,13 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Hereditament: Add comment {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Add remark to hereditament {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/matrices_landing">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Add comment to hereditament(s)</h1>
+                    <h1 class="govuk-heading-xl">Add remark to hereditament(s)</h1>
                 </div>
             </div>
             <!-------------------------- FORM ------------------------->
@@ -23,12 +23,12 @@
                         <h3 class="govuk-heading-m">User ID: abcd1234</h3>
                     </div>
 
-                    <div id=" more-detail-hint " class="govuk-hint ">Add comment here to append to the survey units in the table.</div>
+                    <div id=" more-detail-hint " class="govuk-hint ">Add remark here to append to the survey units in the table.</div>
                     <textarea class="govuk-textarea govuk-!-width-one-half " id="add-a-comment " name="add-a-comment " rows="8 " aria-describedby="add-a-comment-hint "></textarea>
                 </div>
 
                 <div class="govuk-button-group ">
-                    <button formaction="/matrix_comment_success" class="govuk-button " data-module="govuk-button ">Save comment</button>
+                    <button formaction="/matrix_comment_success" class="govuk-button " data-module="govuk-button ">Save remark</button>
                     <a class="govuk-link" href="/matrix_hereditaments">Return to hereditaments</a>
                 </div>
 
@@ -40,12 +40,12 @@
             <table class="govuk-table govuk-!-margin-right-9 govuk-!-font-size-16 ">
                 <thead class="govuk-table__head ">
                     <tr class="govuk-table__row ">
-                        <th scope="col " class="govuk-table__header ">Survey unit address</th>
-                        <th scope="col " class="govuk-table__header ">Existing comment</th>
-                        <th scope="col " class="govuk-table__header ">Comment last updated by:</th>
-                        <th scope="col " class="govuk-table__header ">Comment last updated on:</th>
-                        <th scope="col " class="govuk-table__header ">Property attributes</th>
-                        <th scope="col " class="govuk-table__header ">Survey details</th>
+                        <th scope="col " class="govuk-table__header col-one-twelfth">Survey unit address</th>
+                        <th scope="col " class="govuk-table__header col-two-twelfth">Existing remark</th>
+                        <th scope="col " class="govuk-table__header col-one-twelfth">Remark last updated by:</th>
+                        <th scope="col " class="govuk-table__header col-one-twelfth">Remark last updated on:</th>
+                        <th scope="col " class="govuk-table__header col-three-twelfth">Property attributes</th>
+                        <th scope="col " class="govuk-table__header col-three-twelfth">Survey details</th>
                     </tr>
                 </thead>
                 <tbody class="govuk-table__body ">

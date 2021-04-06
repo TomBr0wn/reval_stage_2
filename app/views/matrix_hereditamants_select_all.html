@@ -5,7 +5,7 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Hereditaments in matrix {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Hereditaments in selected matrix {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/matrices_landing">Back</a>
         <main class="govuk-main-wrapper">
@@ -21,7 +21,7 @@
                     <div>
                         <form action="">
                             <div class="govuk-button-group">
-                                <button formaction="/comments" class="govuk-button" data-module="govuk-button">Add comment to selected</button>
+                                <button formaction="/comments" class="govuk-button" data-module="govuk-button">Add remark to selected</button>
                                 <button formaction="/price" class="govuk-button govuk-button--secondary" data-module="govuk-button">Add value to selected</button>
                                 <a class="govuk-link" href="/matrix-hereditaments_push_cdb">Push price(s) to cdb</a>
                             </div>
