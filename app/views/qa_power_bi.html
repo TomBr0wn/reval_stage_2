@@ -5,43 +5,50 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Property group: Power BI 1 {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Martrix QA: Power BI 1 {% endblock %} {% block content %}
     <div class="govuk-width-container">
-        <a class="govuk-back-link" href="/property_group_list">Back</a>
+        <a class="govuk-back-link" href="/qa_start">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Property group Power BI report Type 1</h1>
+                    <h1 class="govuk-heading-xl">Martrix QA: Power BI 1</h1>
                 </div>
             </div>
             <div class="grid-parent">
-                <div>
-                    <h2 class="govuk-heading-m">PBI Reports</h2>
-                    <ul class="govuk-list govuk-list--spaced">
-                        <li>
-                            <a class="govuk-link" href="/properties_landing">Properties</a>
+                <div class="first-grid-col govuk-!-padding-right-2">
+                    <!-- Start of nav -->
+                    <h2 class="govuk-heading-m">Power BI Reports</h2>
+                    <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 ">
+                        <li class="blueLeftBorder govuk-!-padding-left-2">
+                            <a class="govuk-link" href="/properties_landing">Properties map</a>
+                            <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
+                                <li><a class="govuk-link" href="properties_powerbi_table.html">- Properties table view</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a class="govuk-link" href="/rentals_landing">Rentals</a>
+                            <a class="govuk-link" href="/rentals_landing">Rentals map</a>
+                            <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
+                                <li><a class="govuk-link" href="rentals_powerbi_table.html">- Rentals table view</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a class="govuk-link" href="/properties_landing_power_bi">PBI tbc 1</a>
+                            <a class="govuk-link" href="/properties_landing_power_bi">Current list RV vs Reval List RV</a>
                         </li>
                         <li>
-                            <a class="govuk-link" href="/properties_landing_power_bi_2">PBI tbc 2</a>
+                            <a class="govuk-link" href="/properties_landing_power_bi_2">2017 Matrix value vs Analysed rent</a>
                         </li>
                         <li>
-                            <a class="govuk-link" href="/properties_landing_power_bi_3">PBI tbc 3</a>
+                            <a class="govuk-link" href="/properties_landing_power_bi_3">Rateable value ratios</a>
                         </li>
                     </ul>
                     <div>
                         <h2 class="govuk-heading-m">Matrices</h2>
-                        <ul class="govuk-list">
-
+                        <ul class="govuk-list govuk-!-font-size-19">
                             <a class="govuk-link" href="/matrices_landing">Matrices</a>
                             </li>
                         </ul>
                     </div>
+                    <!-- End of Nav -->
                 </div>
                 <div>
                     <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
