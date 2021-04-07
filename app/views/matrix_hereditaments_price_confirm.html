@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Confirm add value to hereditament(s) {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/matrix_rents_attach_page">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Confirm add value to hereditament(s)?</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <!-- <div class="grid-parent"> -->
+                    <!-- <div>
+                        <p>View Type</p>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link govuk-!-font-weight-bold" href="/properties_landing">Properties</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/rentals_landing">Rentals</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div>
+                        <div class="govuk-warning-text">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>Warning copy to go here (please advise).(NOTE - TB * need correct content here)</strong>
+                        </div>
+                        <p>1 New Matrix Street, Leeds, LS2 8NM</p>
+                        <p>2 New Matrix Street, Leeds, LS2 8NM</p>
+                        <p>3 New Matrix Street, Leeds, LS2 8NM</p>
+                        <form action="/matrix_hereditaments_price_success">
+                            <div class="govuk-button-group">
+                                <button class="govuk-button" data-module="govuk-button">Add value to hereditament</button>
+                                <a class="govuk-link" href="/matrix_hereditaments">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- </div> end of grid parent -->
+            </div>
+        </main>
+    </div> {% endblock %} </body>
+
+</html>
