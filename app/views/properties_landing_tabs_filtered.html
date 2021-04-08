@@ -2,17 +2,17 @@
 <html>
 
 <head>
-    <title>QA Start</title>
+
 </head>
 
 <body>
-    {% extends "layout.html" %} {% block pageTitle %} Property group rental overview {% endblock %} {% block content %}
+    {% extends "layout.html" %} {% block pageTitle %} Property group overview {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/property_group_list">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Property group overview: Rentals</h1>
+                    <h1 class="govuk-heading-xl">Property group overview</h1>
                 </div>
             </div>
 
@@ -21,13 +21,13 @@
                     <!-- Start of nav -->
                     <h2 class="govuk-heading-m">Power BI Reports</h2>
                     <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19">
-                        <li>
+                        <li class="blueLeftBorder govuk-!-padding-left-2">
                             <a class="govuk-link" href="/properties_landing_tabs">Properties</a>
                             <!-- <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
                                 <li><a class="govuk-link" href="properties_powerbi_table.html">- Properties table view</a></li>
                             </ul> -->
                         </li>
-                        <li class="blueLeftBorder govuk-!-padding-left-2">
+                        <li>
                             <a class="govuk-link" href="/rentals_landing_tabs">Rentals</a>
                             <!-- <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16  govuk-!-margin-left-2">
                                 <li><a class="govuk-link" href="rentals_powerbi_table.html">- Rentals table view</a></li>
@@ -59,8 +59,11 @@
                             <!-- <a class="govuk-link" href="properties_powerbi_table.html">View Power BI table</a> -->
                         </div>
                     </form>
-                    <p class="govuk-body-s govuk-!-display-inline govuk-!-margin-bottom-2">Filters Selected: </p>
-                    <p class="govuk-body-s govuk-!-display-inline govuk-!-margin-bottom-2">None</p>
+                    <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Street x </strong></p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Age x </strong></p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Rent value x </strong></p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-red govuk-!-margin-right-2"><strong><a class="filter-pill-red" href="properties_landing">Clear all filters x </a></strong></p>
                     <div class="govuk-tabs govuk-!-margin-top-6" data-module="govuk-tabs">
                         <h2 class="govuk-tabs__title">
                             Contents
@@ -74,13 +77,13 @@
                             </li>
                         </ul>
                         <div class="govuk-tabs__panel" id="properties-map">
-                            <h2 class="govuk-heading-l">Rentals in group map view</h2>
+                            <h2 class="govuk-heading-l">Properties in group map view</h2>
 
-                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-rentals.jpg">
+                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-props.jpg">
                         </div>
                         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="properties-table">
-                            <h2 class="govuk-heading-l">Rentals in group table view</h2>
-                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table">
+                            <h2 class="govuk-heading-l">Properties in group table view</h2>
+                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table.jpg">
                         </div>
                     </div>
                 </div>
