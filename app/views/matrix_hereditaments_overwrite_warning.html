@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Comment multiple hereditament(s) {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/matrix_hereditaments_comment">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Comment multiple hereditament(s)</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <!-- <div class="grid-parent"> -->
+                    <!-- <div>
+                        <p>View Type</p>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link govuk-!-font-weight-bold" href="/properties_landing">Properties</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/rentals_landing">Rentals</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div>
+                        <div class="govuk-warning-text">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>You are about to append a comment to all of the below.(NOTE - TB * need correct content here)</strong>
+                        </div>
+                        <p>1 West Hereditament Street, Leeds, LS2 8NM</p>
+                        <p>2 West Hereditament Street, Leeds, LS2 8NM</p>
+                        <p>3 West Hereditament Street, Leeds, LS2 8NM</p>
+                        <form action="/matrix_comment_success">
+                            <div class="govuk-button-group">
+                                <button class="govuk-button" data-module="govuk-button">Add remark to all</button>
+                                <a class="govuk-link" href="/matrix_hereditaments">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- </div> end of grid parent -->
+            </div>
+        </main>
+    </div> {% endblock %} </body>
+
+</html>
