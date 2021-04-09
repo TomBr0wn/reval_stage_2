@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Edit previous hereditament remark {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/matrix_hereditaments">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Edit previous hereditament remark</h1>
+                </div>
+            </div>
+            <!-------------------------- FORM ------------------------->
+            <form action="">
+
+                <div class="govuk-form-group">
+
+                    <div class="govuk-form-group">
+                        <h3 class="govuk-heading-m">User ID: abcd1234</h3>
+                    </div>
+
+                    <div id=" more-detail-hint " class="govuk-hint ">Edit remark below.</div>
+                    <textarea class="govuk-textarea govuk-!-width-one-half " id="add-a-comment " name="add-a-comment " rows="8 " aria-describedby="add-a-comment-hint ">I'm always relieved when someone is delivering a eulogy and I realise I'm listening to it</textarea>
+                </div>
+
+                <div class="govuk-button-group ">
+                    <button formaction="/#" class="govuk-button " data-module="govuk-button ">Save remark</button>
+                    <a class="govuk-link" href="/matrix_hereditaments_comment">Cancel</a>
+                </div>
+
+            </form>
+
+            <!-- </div> -->
+            <!-- </div> end of grid parent -->
+
+        </main>
+    </div> {% endblock %} </body>
+
+</html>
