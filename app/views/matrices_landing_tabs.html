@@ -2,20 +2,19 @@
 <html>
 
 <head>
-
+    <title></title>
 </head>
 
 <body>
-    {% extends "layout.html" %} {% block pageTitle %} Property group (name) {% endblock %} {% block content %}
+    {% extends "layout.html" %} {% block pageTitle %} Property group matrix details {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/property_group_list">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
-                    <h1 class="govuk-heading-xl">Property group (name will be here)</h1>
+                    <h1 class="govuk-heading-xl">(Property group name): matrix details</h1>
                 </div>
             </div>
-
             <div class="grid-parent">
                 <div class="first-grid-col">
                     <!-- Start of nav -->
@@ -25,7 +24,10 @@
                             <a class="govuk-link govuk-link--no-visited-state" href="/properties_landing_tabs">Overview</a>
                         </li>
                         <li>
-                            <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental Evidence Detail</a>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental evidence details</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing_tabs">Matrix details</a>
                         </li>
                     </ul>
 
@@ -41,14 +43,12 @@
                     <form action="/filters">
                         <div class="govuk-button-group">
                             <button class="govuk-button" data-module="govuk-button">Show Filters</button>
-                            <!-- <a class="govuk-link" href="properties_powerbi_table.html">View Power BI table</a> -->
+                            <!-- <a class="govuk-link govuk-link--no-visited-state" href="properties_powerbi_table.html">View Power BI table</a> -->
                         </div>
                     </form>
-                    <p class="govuk-body-s govuk-!-display-inline">Filters Selected: </p>
-                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Street x </strong></p>
-                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Age x </strong></p>
-                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-blue govuk-!-margin-right-2"><strong>Rent value x </strong></p>
-                    <p class="govuk-body-s govuk-!-display-inline govuk-!-font-size-14 filter-pill-red govuk-!-margin-right-2"><strong><a class="filter-pill-red" href="properties_landing_tabs">Clear all filters x </a></strong></p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-margin-bottom-2">Filters Selected:</p>
+                    <p class="govuk-body-s govuk-!-display-inline govuk-!-margin-bottom-2">None</p>
+
                     <!---------- START OF TABS ----------->
                     <div class="govuk-tabs govuk-!-margin-top-6" data-module="govuk-tabs">
                         <h2 class="govuk-tabs__title">Contents</h2>
@@ -56,7 +56,7 @@
                             <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
                                 <a class="govuk-tabs__tab" href="#properties-dash">Overview</a>
                             </li>
-                            <li class="govuk-tabs__list-item">
+                            <!-- <li class="govuk-tabs__list-item">
                                 <a class="govuk-tabs__tab" href="#properties-map">Map: Properties</a>
                             </li>
                             <li class="govuk-tabs__list-item">
@@ -64,13 +64,13 @@
                             </li>
                             <li class="govuk-tabs__list-item">
                                 <a class="govuk-tabs__tab" href="#mixed-table">Table: Assessment Data & Rental Evidence</a>
-                            </li>
+                            </li> -->
                         </ul>
                         <div class="govuk-tabs__panel" id="properties-dash">
                             <h2 class="govuk-heading-l">Overview</h2>
                             <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-dash.png">
                         </div>
-                        <div class="govuk-tabs__panel" id="properties-map">
+                        <!-- <div class="govuk-tabs__panel" id="properties-map">
                             <h2 class="govuk-heading-l">Properties</h2>
                             <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-props.jpg">
                         </div>
@@ -81,13 +81,12 @@
                         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="mixed-table">
                             <h2 class="govuk-heading-l">Assessment Data & Rental Evidence</h2>
                             <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table.jpg">
-                        </div>
+                        </div> -->
                     </div>
                     <!---------- END OF TABS ----------->
                 </div>
             </div>
             <!-- </div> end of grid parent -->
-
         </main>
     </div>{% endblock %}
 </body>
