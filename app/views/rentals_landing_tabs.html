@@ -6,46 +6,32 @@
 </head>
 
 <body>
-    {% extends "layout.html" %} {% block pageTitle %} Property group rental overview {% endblock %} {% block content %}
+    {% extends "layout.html" %} {% block pageTitle %} Rental evidence details {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/property_group_list">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Property group overview: Rentals</h1>
+                    <h1 class="govuk-heading-xl">Rental evidence details</h1>
                 </div>
             </div>
             <div class="grid-parent">
-                <div class="first-grid-col govuk-!-padding-right-2">
+                <div class="first-grid-col">
                     <!-- Start of nav -->
-                    <h2 class="govuk-heading-m">Power BI view</h2>
+                    <h2 class="govuk-heading-s">Data visualisations</h2>
                     <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19">
                         <li>
-                            <a class="govuk-link" href="/properties_landing_tabs">Properties</a>
-                            <!-- <ul class="govuk-list govuk-list==spaced govuk-!-font-size-16  govuk-!-margin-left-2">
-                                <li><a class="govuk-link" href="properties_powerbi_table.html">- Properties table view</a></li>
-                            </ul> -->
-                        </li>
-                        <li class="blueLeftBorder govuk-!-padding-left-2">
-                            <a class="govuk-link" href="/rentals_landing_tabs">Rentals</a>
-                            <!-- <ul class="govuk-list govuk-list==spaced govuk-!-font-size-16  govuk-!-margin-left-2">
-                                <li><a class="govuk-link" href="rentals_powerbi_table.html">- Rentals table view</a></li>
-                            </ul> -->
+                            <a class="govuk-link govuk-link--no-visited-state" href="/properties_landing_tabs">Overview</a>
                         </li>
                         <li>
-                            <a class="govuk-link" href="/properties_landing_power_bi">Current list RV vs Reval List RV</a>
-                        </li>
-                        <li>
-                            <a class="govuk-link" href="/properties_landing_power_bi_2">2017 Matrix value vs Analysed rent</a>
-                        </li>
-                        <li>
-                            <a class="govuk-link" href="/properties_landing_power_bi_3">Rateable value ratios</a>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental Evidence Detail</a>
                         </li>
                     </ul>
-                    <div>
-                        <h2 class="govuk-heading-m">Matrices</h2>
+
+                    <div class="govuk-!-padding-top-2">
+                        <h2 class="govuk-heading-s ">Matrix details</h2>
                         <ul class="govuk-list govuk-!-font-size-19">
-                            <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing">Add remarks and values</a>
                         </ul>
                     </div>
                     <!-- End of Nav -->
@@ -59,25 +45,36 @@
                     </form>
                     <p class="govuk-body-s govuk-!-display-inline govuk-!-margin-bottom-2">Filters Selected:</p>
                     <p class="govuk-body-s govuk-!-display-inline govuk-!-margin-bottom-2">None</p>
+
+
+                    <!---------- START OF TABS ----------->
                     <div class="govuk-tabs govuk-!-margin-top-6" data-module="govuk-tabs">
                         <h2 class="govuk-tabs__title">Contents</h2>
                         <ul class="govuk-tabs__list">
                             <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                                <a class="govuk-tabs__tab" href="#properties-map">View as map</a>
+                                <a class="govuk-tabs__tab" href="#properties-dash">Overview</a>
                             </li>
                             <li class="govuk-tabs__list-item">
-                                <a class="govuk-tabs__tab" href="#properties-table">View as table</a>
+                                <a class="govuk-tabs__tab" href="#rentals-chart-1">Chart: Current List RV vs Reval List RV</a>
+                            </li>
+                            <li class="govuk-tabs__list-item">
+                                <a class="govuk-tabs__tab" href="#rentals-chart-2">Chart: 2017 Matrix Value vs Analysed Rent</a>
                             </li>
                         </ul>
-                        <div class="govuk-tabs__panel" id="properties-map">
-                            <h2 class="govuk-heading-l">Rentals in group map view</h2>
-                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-rentals.jpg">
+                        <div class="govuk-tabs__panel" id="properties-dash">
+                            <h2 class="govuk-heading-l">Overview</h2>
+                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-dash.png">
                         </div>
-                        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="properties-table">
-                            <h2 class="govuk-heading-l">Rentals in group table view</h2>
-                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table">
+                        <div class="govuk-tabs__panel" id="rentals-chart-1">
+                            <h2 class="govuk-heading-l">Properties</h2>
+                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-uarn.jpg">
+                        </div>
+                        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="rentals-chart-2">
+                            <h2 class="govuk-heading-l">Properties & Rentals</h2>
+                            <img alt="power bi dashboard " class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-bar-chart.jpg">
                         </div>
                     </div>
+                    <!---------- END OF TABS ----------->
                 </div>
             </div>
             <!-- </div> end of grid parent -->
