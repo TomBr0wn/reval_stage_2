@@ -31,29 +31,30 @@
 {% from "govuk/components/textarea/macro.njk"            import govukTextarea %}
 {% from "govuk/components/warning-text/macro.njk"        import govukWarningText %}
 
+{% from "hmrc/components/internal-header/macro.njk"  import hmrcInternalHeader %}
+
 {% block head %}
-  {% include "includes/head.html" %}
+{% include "includes/head.html" %}
 {% endblock %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-    homepageUrl: "/",
-    serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-width-container"
+{# Set serviceName in config.js. #}
+{{ hmrcInternalHeader({
+    homepageUrl: 'https://www.gov.uk/government/organisations/hm-revenue-customs',
+    serviceName: 'Reval and Defence Tool',
+    serviceUrl: '#'
   }) }}
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
 {% if useAutoStoreData %}
-  {% block footer %}
-    {{ govukFooter({
+{% block footer %}
+{{ govukFooter({
       meta: {
         items: [
           {
@@ -67,13 +68,13 @@
         ]
       }
     }) }}
-  {% endblock %}
+{% endblock %}
 {% endif %}
 
 {% block bodyEnd %}
-  {% block scripts %}
-    {% include "includes/scripts.html" %}
-    {% block pageScripts %}{% endblock %}
-  {% endblock %}
-  <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
+{% block scripts %}
+{% include "includes/scripts.html" %}
+{% block pageScripts %}{% endblock %}
+{% endblock %}
+<!-- GOV.UK Prototype Kit {{releaseVersion}} -->
 {% endblock %}
