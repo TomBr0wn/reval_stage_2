@@ -8,7 +8,7 @@ import govukSelect %} {% from "govuk/components/skip-link/macro.njk" import govu
 import govukTabs %} {% from "govuk/components/tag/macro.njk" import govukTag %} {% from "govuk/components/textarea/macro.njk" import govukTextarea %} {% from "govuk/components/warning-text/macro.njk" import govukWarningText %} {% from "hmrc/components/internal-header/macro.njk"
 import hmrcInternalHeader %} {% block head %} {% include "includes/head.html" %} {% endblock %} {% block pageTitle %} GOV.UK Prototype Kit {% endblock %} {% block header %} {# Set serviceName in config.js. #}
 <div class="govuk-width-container">
-    {{ hmrcInternalHeader({ homepageUrl: 'https://www.gov.uk/government/organisations/hm-revenue-customs', serviceName: 'Reval and Defence Tool', serviceUrl: '#' }) }}
+    {{ hmrcInternalHeader({ homepageUrl: '/', serviceName: 'Reval and Defence Tool', serviceUrl: '/property_group_list' }) }}
 </div>
 
 {% endblock %} {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %} {% if useAutoStoreData %} {% block footer %} {{ govukFooter({ meta: { items: [ { href: "https://govuk-prototype-kit.herokuapp.com/", text: "GOV.UK Prototype
