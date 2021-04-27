@@ -18,7 +18,7 @@
             <div class="grid-parent">
                 <div class="first-grid-col govuk-!-margin-right-1">
                     <!-- Start of nav -->
-                    <h2 class="govuk-heading-s">Data visualisations</h2>
+                    <h2 class="govuk-heading-s">Summary</h2>
                     <hr class="govuk-section-break govuk-section-break--visible">
                     <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 govuk-!-margin-top-3 sideNavSpacer">
                         <li>
@@ -26,28 +26,25 @@
                             <a class="govuk-link govuk-link--no-visited-state" href="/properties_landing_tabs">Property group overview</a>
                         </li>
                         <li>
-                            <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental evidence details</a>
-                        </li>
-                        <li>
-                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing_tabs">Matrix details</a>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing_tabs">Matrices overview</a>
                         </li>
                     </ul>
-
-                    <!-- <div class="govuk-!-padding-top-2">
-                        <h2 class="govuk-heading-s">Matrices</h2>
-                        <ul class="govuk-list govuk-!-font-size-19">
-                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing">Add remarks and values</a>
-                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" formaction="/matrices_landing">Add value or remark</button>
-                        </ul>
-                    </div> -->
+                    <h2 class="govuk-heading-s">Analysis</h2>
+                    <hr class="govuk-section-break govuk-section-break--visible">
+                    <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 govuk-!-margin-top-3 sideNavSpacer">
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental evidence</a>
+                        </li>
+                    </ul>
+                    <button class="govuk-button" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button>
 
                     <!-- End of Nav -->
                 </div>
                 <div class="second-grid-col">
                     <form action="">
                         <div class="govuk-button-group">
-                            <button class="govuk-button" data-module="govuk-button" formaction="/filters">Filter property group</button>
-                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button>
+                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" formaction="/filters">Filter property group</button>
+                            <!-- <button class="govuk-button govuk-button--secondary" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button> -->
                             <!-- <a class="govuk-link govuk-link--no-visited-state" href="properties_powerbi_table.html">View Power BI table</a> -->
                         </div>
                     </form>
