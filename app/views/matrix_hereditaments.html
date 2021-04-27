@@ -3,6 +3,7 @@
 
 <head>
     <title></title>
+    <script src="https://use.fontawesome.com/3a102ee6e8.js"></script>
 </head>
 
 <body> {% extends "layout.html" %} {% block pageTitle %} Hereditaments in selected matrix {% endblock %} {% block content %}
@@ -31,11 +32,11 @@
 
                         <!----------------------- Start of table ------------------------------->
 
-                        <table class="govuk-table govuk-!-font-size-16">
+                        <table id="simpleTable" class="govuk-table govuk-!-font-size-16 ui-sortable-table">
                             <thead class="govuk-table__head">
                                 <tr class="govuk-table__row">
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth"><a href="matrix_hereditamants_select_all">Select all</a></th>
-                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Address</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth" data-sort="string">Address &nbsp;<span class="caret"></span></th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Total significant area</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Current List £/m2</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Reval List £/m2</th>
@@ -74,7 +75,7 @@
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
-                                    <td class="govuk-table__cell">38 Park Square North, Leeds, LS1 2NY</td>
+                                    <td class="govuk-table__cell">38 Charlotte Square North, Leeds, LS1 2NY</td>
                                     <td class="govuk-table__cell">10,000m2</td>
                                     <td class="govuk-table__cell">10,000m2</td>
                                     <td class="govuk-table__cell">£00.00</td>
@@ -164,7 +165,7 @@
                                             <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
                                         </div>
                                     </td>
-                                    <td class="govuk-table__cell">78 Roman Rd, Leeds, LS2 8ZE</td>
+                                    <td class="govuk-table__cell">78 Jones Road, Leeds, LS2 8ZE</td>
                                     <td class="govuk-table__cell">10,000m2</td>
                                     <td class="govuk-table__cell">10,000m2</td>
                                     <td class="govuk-table__cell">£00.00</td>
@@ -224,6 +225,8 @@
 
             </div>
         </main>
-    </div> {% endblock %} </body>
+    </div> {% endblock %}
+
+</body>
 
 </html>
