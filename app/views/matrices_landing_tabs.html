@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    {% extends "layout.html" %} {% block pageTitle %} Industrials in Leeds - Matrix details {% endblock %} {% block content %}
+    {% extends "layout.html" %} {% block pageTitle %} Industrials in Leeds: Matrices {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/property_group_list">Back</a>
         <main class="govuk-main-wrapper">
@@ -36,8 +36,9 @@
                             <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental evidence</a>
                         </li>
                     </ul>
-                    <button class="govuk-button" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button>
-
+                    <form action="">
+                        <button class="govuk-button" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button>
+                    </form>
                     <!-- End of Nav -->
                 </div>
                 <div class="second-grid-col">

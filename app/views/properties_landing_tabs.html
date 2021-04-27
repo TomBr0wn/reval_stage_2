@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    {% extends "layout.html" %} {% block pageTitle %} Industrials in Leeds - Overview {% endblock %} {% block content %}
+    {% extends "layout.html" %} {% block pageTitle %} Industrials in Leeds: Overview {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/property_group_list">Back</a>
         <main class="govuk-main-wrapper">
@@ -19,7 +19,7 @@
                 <div class="first-grid-col govuk-!-margin-right-1">
                     <!-- Start of nav -->
                     <h2 class="govuk-heading-s">Summary</h2>
-                    <hr class="govuk-section-break govuk-section-break--visible">
+                    <hr class="govuk-section-break govuk-section-break--visible" />
                     <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 govuk-!-margin-top-3 sideNavSpacer">
                         <li>
                             <span class="blueLeftBorder"></span>
@@ -30,13 +30,15 @@
                         </li>
                     </ul>
                     <h2 class="govuk-heading-s">Analysis</h2>
-                    <hr class="govuk-section-break govuk-section-break--visible">
+                    <hr class="govuk-section-break govuk-section-break--visible" />
                     <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 govuk-!-margin-top-3 sideNavSpacer">
                         <li>
                             <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental evidence</a>
                         </li>
                     </ul>
-                    <button class="govuk-button" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button>
+                    <form action="">
+                        <button class="govuk-button" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button>
+                    </form>
 
                     <!-- End of Nav -->
                 </div>
