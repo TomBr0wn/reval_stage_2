@@ -7,35 +7,40 @@
 
 <body> {% extends "layout.html" %} {% block pageTitle %} Exclude rent: Are you sure? {% endblock %} {% block content %}
     <div class="govuk-width-container">
-        <a class="govuk-back-link" href="/matrix_rents_exclude_page">Back</a>
+        <a class="govuk-back-link" href="/matrices_landing">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Exclude rent: Are you sure?</h1>
+                    <h1 class="govuk-heading-xl">Confirm Exclude rents from Matrix_AAA_1111?</h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
                     <!-- <div class="grid-parent"> -->
-                    <div class="govuk-warning-text">
-                        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                        <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>You will be in big trouble if this is wrong.</strong>
-                    </div>
+                    <!-- <div>
+                        <p>View Type</p>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link govuk-!-font-weight-bold" href="/properties_landing">Properties</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/rentals_landing">Rentals</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                            </li>
+                        </ul>
+                    </div> -->
                     <div>
-                        <div>
-                            <p class="govuk-heading-s">Address</p>
-                            <p class="govuk-!-font-size-24">40 Roman Rd, Leeds, LS2 8ZE</p>
+                        <div class="govuk-warning-text">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>Subject matter expert must advise here on warning message wording</strong>
                         </div>
-                        <div>
-                            <p class="govuk-heading-s">to</p>
-                            <p class="govuk-!-font-size-24">Matrix_AAA_1111</p>
-                        </div>
-                        <div>
-                        </div>
+
                         <form action="matrix_rents_exclude_success">
                             <div class="govuk-button-group">
-                                <button class="govuk-button govuk-button--warning" data-module="govuk-button">Exclude rent from matrix</button>
-                                <a class="govuk-link" href="matrix_rents">Cancel</a>
+                                <button class="govuk-button govuk-button--warning" data-module="govuk-button">Exclude and continue</button>
+                                <a class="govuk-link" href="/matrices_landing">Cancel</a>
                             </div>
                         </form>
                     </div>
