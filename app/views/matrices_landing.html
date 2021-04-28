@@ -16,116 +16,114 @@
                 </div>
             </div>
 
-            <div class="grid-parent">
-                <div class="first-grid-col">
-                    <!-- Start of nav -->
-                    <h2 class="govuk-heading-s">Data visualisations</h2>
+            <!-- <div class="grid-parent">
+                <div class="first-grid-col"> -->
+            <!-- Start of nav -->
+            <!-- <h2 class="govuk-heading-s">Summary</h2>
                     <hr class="govuk-section-break govuk-section-break--visible">
                     <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 govuk-!-margin-top-3 sideNavSpacer">
                         <li>
                             <a class="govuk-link govuk-link--no-visited-state" href="/properties_landing_tabs">Property group overview</a>
                         </li>
                         <li>
-                            <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental evidence details</a>
-                        </li>
-                        <li>
-                            <span class="blueLeftBorder"></span>
-                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing_tabs">Matrix details</a>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing_tabs">Matrices overview</a>
                         </li>
                     </ul>
-
-                    <!-- <div class="govuk-!-padding-top-2">
-                        <h2 class="govuk-heading-s">Matrices</h2>
-                        <ul class="govuk-list govuk-!-font-size-19">
-                            <a class="govuk-link govuk-link--no-visited-state" href="/matrices_landing">Add remarks and values</a>
-                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" formaction="/matrices_landing">Add value or remark</button>
-                        </ul>
-                    </div> -->
-
-                    <!-- End of Nav -->
-                </div>
-                <div class="second-grid-col">
-                    <table class="govuk-table govuk-!-font-size-16">
-                        <thead class="govuk-table__head">
-                            <tr class="govuk-table__row">
-                                <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Matrix ref</th>
-                                <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Description</th>
-                                <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">No of hereditaments</th>
-                                <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
-                                <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th>
-                                <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th>
-                                <!-- <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th>
+                    <h2 class="govuk-heading-s">Analysis</h2>
+                    <hr class="govuk-section-break govuk-section-break--visible">
+                    <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 govuk-!-margin-top-3 sideNavSpacer">
+                        <li>
+                            <span class="blueLeftBorder"></span>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/rentals_landing_tabs">Rental evidence</a>
+                        </li>
+                    </ul>
+                    <form action="">
+                        <button class="govuk-button govuk-button--secondary govuk-!-margin-top-3" data-module="govuk-button" formaction="/matrices_landing">Start valuation</button>
+                    </form> -->
+            <!-- End of Nav -->
+            <!-- </div> -->
+            <div class="second-grid-col">
+                <table class="govuk-table govuk-!-font-size-16">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Matrix ref</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Description</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">No of hereditaments</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Status</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th>
+                            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th>
+                            <!-- <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th>
                                     <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">&nbsp;</th> -->
-                            </tr>
-                        </thead>
-                        <tbody class="govuk-table__body">
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Matrix_AAA_1111</td>
-                                <td class="govuk-table__cell">Rooted above a tundra</td>
-                                <td class="govuk-table__cell">99</td>
-                                <td class="govuk-table__cell">Open</td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
-                                </td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Matrix_XXX_2222</td>
-                                <td class="govuk-table__cell">Formed next to a geyser field</td>
-                                <td class="govuk-table__cell">99</td>
-                                <td class="govuk-table__cell">Closed</td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
-                                </td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Matrix_QQQ_9999</td>
-                                <td class="govuk-table__cell">Headed towards a harsh future</td>
-                                <td class="govuk-table__cell">99</td>
-                                <td class="govuk-table__cell">Closed</td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
-                                </td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Matrix_GGG_1234</td>
-                                <td class="govuk-table__cell">Ventarco is home to goblins</td>
-                                <td class="govuk-table__cell">99</td>
-                                <td class="govuk-table__cell">Open</td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
-                                </td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
-                                </td>
-                            </tr>
-                            <tr class="govuk-table__row">
-                                <td class="govuk-table__cell">Matrix_ZZZ_0000</td>
-                                <td class="govuk-table__cell">Dark wooden rooftops, lavastone walls</td>
-                                <td class="govuk-table__cell">99</td>
-                                <td class="govuk-table__cell">Open</td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
-                                </td>
-                                <td class="govuk-table__cell">
-                                    <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_AAA_1111</td>
+                            <td class="govuk-table__cell">Rooted above a tundra</td>
+                            <td class="govuk-table__cell">99</td>
+                            <td class="govuk-table__cell">Open</td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_XXX_2222</td>
+                            <td class="govuk-table__cell">Formed next to a geyser field</td>
+                            <td class="govuk-table__cell">99</td>
+                            <td class="govuk-table__cell">Closed</td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_QQQ_9999</td>
+                            <td class="govuk-table__cell">Headed towards a harsh future</td>
+                            <td class="govuk-table__cell">99</td>
+                            <td class="govuk-table__cell">Closed</td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_GGG_1234</td>
+                            <td class="govuk-table__cell">Ventarco is home to goblins</td>
+                            <td class="govuk-table__cell">99</td>
+                            <td class="govuk-table__cell">Open</td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
+                            </td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">Matrix_ZZZ_0000</td>
+                            <td class="govuk-table__cell">Dark wooden rooftops, lavastone walls</td>
+                            <td class="govuk-table__cell">99</td>
+                            <td class="govuk-table__cell">Open</td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_hereditaments">View hereditaments</a>
+                            </td>
+                            <td class="govuk-table__cell">
+                                <a class="govuk-link govuk-link--no-visited-state" href="/matrix_rents">View rents</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <!-- </div> end of grid parent -->
+    </div>
+    <!-- </div> end of grid parent -->
 
-        </main>
+    </main>
     </div>{% endblock %}
 
 </body>
