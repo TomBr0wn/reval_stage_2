@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    {% extends "layout.html" %} {% block pageTitle %} QA Process {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/qa_start">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <h1 class="govuk-heading-xl">QA Process</h1>
+                </div>
+            </div>
+            <div class="grid-parent">
+                <div class="first-grid-col govuk-!-margin-right-1">
+                    <!-- Start of nav -->
+                    <h2 class="govuk-heading-s">QA Process</h2>
+                    <hr class="govuk-section-break govuk-section-break--visible" />
+                    <ul class="govuk-list govuk-list--spaced govuk-!-font-size-19 govuk-!-margin-top-3 sideNavSpacer">
+                        <li>
+                            <span class="blueLeftBorder"></span>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/qa_landing_tabs">Property group overview</a>
+                        </li>
+                        <li>
+                            <a class="govuk-link govuk-link--no-visited-state" href="/qa_matrix_tabs">Matrix overview</a>
+                            <ul class="govuk-list govuk-list--spaced govuk-!-font-size-16 govuk-!-margin-top-3 sideNavSpacer">
+                                <li><a class="govuk-link govuk-link--no-visited-state" href="/#">Ratio 1</a></li>
+                                <li><a class="govuk-link govuk-link--no-visited-state" href="/#">Ratio 2</a></li>
+                                <li><a class="govuk-link govuk-link--no-visited-state" href="/#">Ratio 3</a></li>
+                                <li><a class="govuk-link govuk-link--no-visited-state" href="/#">Ratio 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- End of Nav -->
+                </div>
+                <div class="second-grid-col">
+
+                    <!---------- START OF TABS ----------->
+                    <div class="govuk-tabs govuk-!-margin-top-6" data-module="govuk-tabs">
+                        <h2 class="govuk-tabs__title">Contents</h2>
+                        <ul class="govuk-tabs__list">
+                            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                                <a class="govuk-tabs__tab" href="#qa-overview">Overview</a>
+                            </li>
+                            <li class="govuk-tabs__list-item">
+                                <a class="govuk-tabs__tab" href="#qa-heatmap">Heat Map</a>
+                            </li>
+                            <li class="govuk-tabs__list-item">
+                                <a class="govuk-tabs__tab" href="#qa-stats">Descriptive statistics</a>
+                            </li>
+                            <li class="govuk-tabs__list-item">
+                                <a class="govuk-tabs__tab" href="#qa-table">QA Table</a>
+                            </li>
+                        </ul>
+                        <div class="govuk-tabs__panel" id="qa-overview">
+                            <h2 class="govuk-heading-l">Overview</h2>
+                            <img alt="power bi dashboard" class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-dash.png" />
+                        </div>
+                        <div class="govuk-tabs__panel" id="qa-heatmap">
+                            <h2 class="govuk-heading-l">Heat Map</h2>
+                            <img alt="power bi dashboard" class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-props.jpg" />
+                        </div>
+                        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="qa-stats">
+                            <h2 class="govuk-heading-l">Descriptive statistics</h2>
+                            <img alt="power bi dashboard" class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-mixmap.jpg" />
+                        </div>
+                        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="qa-table">
+                            <h2 class="govuk-heading-l">QA Table</h2>
+                            <img alt="power bi dashboard" class="govuk-!-width-full govuk-!-margin-top-3" src="/public/images/pbi-16-9-table.jpg" />
+                        </div>
+                    </div>
+                    <!---------- END OF TABS ----------->
+                </div>
+            </div>
+            <!-- </div> end of grid parent -->
+        </main>
+    </div>
+    {% endblock %}
+</body>
+
+</html>
