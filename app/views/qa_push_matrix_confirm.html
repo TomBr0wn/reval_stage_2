@@ -5,13 +5,13 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} QA Push matrix confirm {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Upload matrice to CDB {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/qa_start">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Are you sure? Push matrice to CDB</h1>
+                    <h1 class="govuk-heading-xl">Upload matrice to CDB</h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
@@ -34,11 +34,11 @@
                     <div>
                         <div class="govuk-warning-text">
                             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>This creates evidence file in Power BI and uploads supporting rent file & URL to matrix in CDB, enabling sign-off.</strong>
+                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>Are you sure you want to save this Matrix to CDB?</strong>
                         </div>
                         <div>
-                            <p>Matrix Name here</p>
-                            <p>Matrix Reference here</p>
+                            <p>Reference: Matrix_AAA_1111</p>
+                            <p>Description: Some industrials around the city centre</p>
                         </div>
                         <form action="qa_push_matrix_success">
                             <div class="govuk-button-group">

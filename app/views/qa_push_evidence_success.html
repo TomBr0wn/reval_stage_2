@@ -5,7 +5,7 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Matrix saved to CDB {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Evidence file created {% endblock %} {% block content %}
     <div class="govuk-width-container">
         <a class="govuk-back-link" href="/qa_start">Back</a>
         <main class="govuk-main-wrapper">
@@ -23,22 +23,21 @@
                     </div>
                     <div class="govuk-notification-banner__content">
                         <h3 class="govuk-notification-banner__heading">
-                            Matrix saved to CDB
+                            Evidence file created and URL uploaded
                         </h3>
                         <!-- <p class="govuk-body">You have created an evidence file in Power BI, sent supporting rent file & URL to CDB and can now sign-off.</p> -->
                     </div>
                 </div>
-                <div>
-                    <h1 class="govuk-heading-xl">Do you want to save an evidence file?</h1>
-                    <p>Reference: Matrix_AAA_1111</p>
-                    <p>Description: Some industrials around the city centre</p>
-                </div>
-                <form action="qa_push_evidence_success.html">
+                <!-- <div>
+                    <h1 class="govuk-heading-l">Do you want to QA another Matrix?</h1>
+                </div> -->
+                <!-- <form action="/qa_start">
                     <div class="govuk-button-group">
-                        <button class="govuk-button" data-module="govuk-button">Save evidence file</button>
-                        <a class="govuk-link" href="qa_start">Cancel</a>
+                        <button class="govuk-button" data-module="govuk-button">Continue</button>
+                        <a class="govuk-link" href="qa_start">QA another matrix</a>
                     </div>
-                </form>
+                </form> -->
+                <a class="govuk-link" href="qa_start">Return to QA home</a>
             </div>
 
         </main>
