@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Add value to hereditament(s) {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/matrix_hereditamants_select_all">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Add value to hereditament(s)</h1>
+                </div>
+            </div>
+
+            <div class="govuk-form-group">
+                <h3 class="govuk-heading-m">User ID: abcd1234</h3>
+            </div>
+            <!-------------------------- FORM ------------------------->
+            <form action="/price_matrix_hereditaments_success">
+
+                <div class="govuk-form-group">
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="commenterName">Value</label>
+                        <input class="govuk-input govuk-!-width-one-half" id="commenterName" name="commenterName" type="text">
+                    </div>
+                </div>
+
+                <div class="govuk-button-group">
+                    <button formaction="/matrix_hereditaments_value_confirm_fail" class="govuk-button" data-module="govuk-button">Continue</button>
+                    <a class="govuk-link" href="/matrix_hereditaments">Cancel</a>
+                </div>
+
+            </form>
+
+
+
+        </main>
+    </div> {% endblock %} </body>
+
+</html>

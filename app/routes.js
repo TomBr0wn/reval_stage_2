@@ -14,3 +14,8 @@ router.get('/comments', (req, res) => {
 router.get('/price', (req, res) => {
     res.redirect('/matrix_hereditaments_price');
 });
+
+// Price route fail
+router.get('/price_fail', (req, res) => {
+    res.redirect('/matrix_hereditaments_price_fail');
+});
