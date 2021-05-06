@@ -7,7 +7,7 @@
 
 <body> {% extends "layout.html" %} {% block pageTitle %} Confirm add value to hereditament(s) {% endblock %} {% block content %}
     <div class="govuk-width-container">
-        <a class="govuk-back-link" href="/matrix_rents_attach_page">Back</a>
+        <a class="govuk-back-link" href="/matrix_hereditaments_price">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
@@ -34,11 +34,14 @@
                     <div>
                         <div class="govuk-warning-text">
                             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>Warning copy to go here (please advise).(NOTE - TB * need correct content here)</strong>
+                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>You are about to add the value to all of the addresses below. Are you sure?</strong>
                         </div>
-                        <p>1 New Matrix Street, Leeds, LS2 8NM</p>
-                        <p>2 New Matrix Street, Leeds, LS2 8NM</p>
-                        <p>3 New Matrix Street, Leeds, LS2 8NM</p>
+                        <p>56 Roman Rd, Leeds, LS2 8ZE</p>
+                        <p>12 Grand Arcade, Leeds, LS1 6PG</p>
+                        <p>18 Grand Arcade, Leeds, LS1 6PG</p>
+                        <p>78 Jones Road, Leeds, LS2 8ZE</p>
+                        <p>34 Grand Arcade, Leeds, LS1 6PG</p>
+                        <p>51 Grand Arcade, Leeds, LS1 6PG</p>
                         <form action="/matrix_hereditaments_price_success">
                             <div class="govuk-button-group">
                                 <button class="govuk-button" data-module="govuk-button">Add value and continue</button>

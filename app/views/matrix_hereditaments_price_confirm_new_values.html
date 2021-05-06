@@ -5,13 +5,13 @@
     <title></title>
 </head>
 
-<body> {% extends "layout.html" %} {% block pageTitle %} Confirm push value to CDB {% endblock %} {% block content %}
+<body> {% extends "layout.html" %} {% block pageTitle %} Confirm add value to hereditaments {% endblock %} {% block content %}
     <div class="govuk-width-container">
-        <a class="govuk-back-link" href="/matrix_hereditaments">Back</a>
+        <a class="govuk-back-link" href="/matrix_hereditaments_price">Back</a>
         <main class="govuk-main-wrapper">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h1 class="govuk-heading-xl">Confirm push value to CDB</h1>
+                    <h1 class="govuk-heading-xl">Confirm add value to hereditament</h1>
                 </div>
             </div>
             <div class="govuk-grid-row">
@@ -34,7 +34,7 @@
                     <div>
                         <div class="govuk-warning-text">
                             <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>You are about to push the addresses listed below to CDB</strong>
+                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>You are about to add the value to all of the addresses below. Are you sure?</strong>
                         </div>
                         <p>56 Roman Rd, Leeds, LS2 8ZE</p>
                         <p>12 Grand Arcade, Leeds, LS1 6PG</p>
@@ -44,7 +44,7 @@
                         <p>51 Grand Arcade, Leeds, LS1 6PG</p>
                         <form action="/matrix_hereditaments_price_success">
                             <div class="govuk-button-group">
-                                <button class="govuk-button" data-module="govuk-button">Push to CDB</button>
+                                <button class="govuk-button" data-module="govuk-button">Add value and continue</button>
                                 <a class="govuk-link" href="/matrix_hereditaments">Cancel</a>
                             </div>
                         </form>

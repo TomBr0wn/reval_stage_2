@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://use.fontawesome.com/3a102ee6e8.js"></script>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Hereditaments in selected matrix {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/matrices_landing">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Matrix_AAA_1111: Hereditaments</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <!-- <div class="grid-parent"> -->
+
+                    <div>
+                        <form action="">
+                            <div class="govuk-button-group">
+                                <button formaction="/price" class="govuk-button" data-module="govuk-button">Add value to selected</button>
+                                <button formaction="/matrix_hereditaments_push_value_cdb_success" class="govuk-button govuk-button--secondary" data-module="govuk-button">Push value to cdb</button>
+                                <!-- <button formaction="/comments" class="govuk-button govuk-button--secondary" data-module="govuk-button">Add remark to selected</button> -->
+                                <!-- <a class="govuk-link" href="/matrix_hereditaments_push_value_cdb">Push value to cdb</a> -->
+                                <a class="govuk-link" href="/comments">Add remark to selected</a>
+                            </div>
+                        </form>
+
+                        <!-- <img alt="power bi dashboard " class="govuk-!-width-full" src="/public/images/map-no-filter.png"> -->
+
+                        <!----------------------- Start of table ------------------------------->
+
+                        <table id="simpleTable" class="govuk-table govuk-!-font-size-16 ui-sortable-table">
+                            <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth"><a href="matrix_hereditamants_select_all">Select all</a></th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth" data-sort="string">Address &nbsp;<span class="caret"></span></th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Total significant area</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Current List £/m2</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Reval List £/m2</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Comments Y/N</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent analysed /sqM</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent RSI</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent Analysis Type</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">Rent useful ind</th>
+                                    <th scope="col" class="govuk-table__header govuk-!-width-one-eighth">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody class="govuk-table__body">
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell" name="singleLeedsAddress">40 Roman Rd, Leeds, LS2 8ZE</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£00.00</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">38 Charlotte Square North, Leeds, LS1 2NY</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£00.00</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">83 Albion Street, Leeds, LS1 5AP</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£00.00</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">56 Roman Rd, Leeds, LS2 8ZE</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£2,000</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">12 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£2,000</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">18 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£2,000</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">78 Jones Road, Leeds, LS2 8ZE</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£2,000</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">34 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£2,000</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="property_1" name="property_1" type="checkbox" value="1">
+                                            <label class="govuk-label govuk-checkboxes__label" for="property_1">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td class="govuk-table__cell">51 Grand Arcade, Leeds, LS1 6PG</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">10,000m2</td>
+                                    <td class="govuk-table__cell">£2,000</td>
+                                    <td class="govuk-table__cell">Y</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">&nbsp;</td>
+                                    <td class="govuk-table__cell">A</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+                <!-- </div> -->
+                <!-- </div> end of grid parent -->
+
+                <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link " href="#top "><svg role="presentation " focusable="false " class="app-back-to-top__icon " xmlns="http://www.w3.org/2000/svg " width="13 " height="17 " viewBox="0 0 13 17 "><path fill="currentColor " d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z "></path></svg>   Back to top</a>
+
+            </div>
+        </main>
+    </div> {% endblock %}
+
+</body>
+
+</html>
