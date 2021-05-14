@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body> {% extends "layout.html" %} {% block pageTitle %} Create evidence file {% endblock %} {% block content %}
+    <div class="govuk-width-container">
+        <a class="govuk-back-link" href="/qa_start">Back</a>
+        <main class="govuk-main-wrapper">
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h1 class="govuk-heading-xl">Save evidence file</h1>
+                </div>
+            </div>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    <!-- <div class="grid-parent"> -->
+                    <!-- <div>
+                        <p>View Type</p>
+                        <ul class="govuk-list">
+                            <li>
+                                <a class="govuk-link govuk-!-font-weight-bold" href="/properties_landing">Properties</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/rentals_landing">Rentals</a>
+                            </li>
+                            <li>
+                                <a class="govuk-link" href="/matrices_landing">Matrices</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div>
+                        <div class="govuk-warning-text">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>Are you sure you want to you want to save an evidence file?<br>This will create an evidence file in PowerBI and upload supporting rent file & URL to matrix to CDB</strong>
+                        </div>
+                        <div>
+                            <p>Reference: Matrix_AAA_1111</p>
+                            <p>Description: Some industrials around the city centre</p>
+                        </div>
+                        <form action="qa_push_evidence_success">
+                            <div class="govuk-button-group">
+                                <button class="govuk-button" data-module="govuk-button">Save evidence file</button>
+                                <a class="govuk-link" href="qa_start">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- </div> -->
+                <!-- </div> end of grid parent -->
+            </div>
+        </main>
+    </div> {% endblock %} </body>
+
+</html>
