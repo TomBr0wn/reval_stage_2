@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+
+	<body>
+		{% extends "layout.html" %} {% block pageTitle %} Upload matrice to CDB {% endblock %} {% block content %}
+		<div class="govuk-width-container">
+			<a class="govuk-back-link" href="/qa_start">Back</a>
+			<main class="govuk-main-wrapper">
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-two-thirds">
+                        <h1 class="govuk-heading-xl">Upload matrix to CDB Complete</h1>
+                        <p class="govuk-body-l">There were errors when uploading to the CBD</p>
+					</div>
+				</div>
+				<div class="govuk-grid-row">
+					<div class="govuk-grid-column-full">
+						<div>
+							<div class="moj-banner moj-banner--warning">
+								<svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+									<path d="M13.6,15.4h-2.3v-4.5h2.3V15.4z M13.6,19.8h-2.3v-2.2h2.3V19.8z M0,23.2h25L12.5,2L0,23.2z" />
+								</svg>
+
+								<div class="moj-banner__message"><span class="moj-banner__assistive">Warning</span><p class="govuk-body govuk-!-font-weight-bold">FOR Number: <span class="govuk-body govuk-!-font-weight-bold">111111111111</span> — <span class="govuk-body govuk-!-font-weight-regular">CBD User initials not found for PID 123456 - Defaulted to RSA_GEN. (2)</span></p></div>
+                            </div>
+                            <div class="moj-banner moj-banner--warning">
+								<svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+									<path d="M13.6,15.4h-2.3v-4.5h2.3V15.4z M13.6,19.8h-2.3v-2.2h2.3V19.8z M0,23.2h25L12.5,2L0,23.2z" />
+								</svg>
+
+								<div class="moj-banner__message"><span class="moj-banner__assistive">Warning</span><p class="govuk-body govuk-!-font-weight-bold">FOR Number: <span class="govuk-body govuk-!-font-weight-bold">222222222222</span> — <span class="govuk-body govuk-!-font-weight-regular">CBD User initials not found for PID 987662 - Defaulted to RSA_GEN. (2)</span></p></div>
+                            </div>
+                            <div class="moj-banner moj-banner--warning">
+								<svg class="moj-banner__icon" fill="currentColor" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" height="25" width="25">
+									<path d="M13.6,15.4h-2.3v-4.5h2.3V15.4z M13.6,19.8h-2.3v-2.2h2.3V19.8z M0,23.2h25L12.5,2L0,23.2z" />
+								</svg>
+
+								<div class="moj-banner__message"><span class="moj-banner__assistive">Warning</span><p class="govuk-body govuk-!-font-weight-bold">FOR Number: <span class="govuk-body govuk-!-font-weight-bold">333333333333</span> — <span class="govuk-body govuk-!-font-weight-regular">CBD User initials not found for PID 638363 - Defaulted to RSA_GEN. (2)</span></p></div>
+							</div>
+							
+							<form action="qa_push_matrix_success">
+								<div class="govuk-button-group">
+									<!-- <button class="govuk-button" data-module="govuk-button">Upload QA to CDB</button> -->
+									<a class="govuk-link" href="qa_start">Return to QA</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- </div> -->
+					<!-- </div> end of grid parent -->
+				</div>
+			</main>
+		</div>
+		{% endblock %}
+	</body>
+</html>
